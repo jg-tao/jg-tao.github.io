@@ -36,10 +36,13 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -72,7 +75,65 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -114,59 +175,47 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-  <ul>
-  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome</a></li>
-  <li><a href="#expertise-core-competencies" id="toc-expertise-core-competencies" class="nav-link" data-scroll-target="#expertise-core-competencies">Expertise &amp; Core Competencies</a></li>
-  <li><a href="#education" id="toc-education" class="nav-link" data-scroll-target="#education">Education</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
-<div class="quarto-about-trestles">
-  <div class="about-entity">
-    <img src="profile.jpg" class="about-image
-  round " style="height: 20em; width: 20em;">
+<main class="content column-page" id="quarto-document-content">
+
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Julia Tao</h1>
 </div>
-<div class="quarto-title-meta">
-  </div>
-</header>
-    <div class="about-links">
-  <a href="https://linkedin.com/in/your-profile" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="https://github.com/jujubee7" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">GitHub</span>
-  </a>
-  <a href="/files/TaoJuliaCV.pdf" class="about-link" rel="" target="">
-    <i class="bi bi-file-earmark-pdf"></i>
-     <span class="about-link-text">CV</span>
-  </a>
-  <a href="mailto:jgaub@alum.mit.edu" class="about-link" rel="" target="">
-    <i class="bi bi-envelope"></i>
-     <span class="about-link-text">Email</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents"><main class="content" id="quarto-document-content">
 
+
+
+<div class="quarto-title-meta column-page">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="quarto-layout-panel" data-layout="[30, 70]">
+<div class="quarto-layout-row">
+<div id="hero-image" class="quarto-layout-cell" style="flex-basis: 30.0%;justify-content: center;">
+<p><img src="profile.jpg" class="rounded-circle img-fluid"></p>
+<p><strong>Julia Tao</strong></p>
+<p><a href="https://linkedin.com/in/your-profile"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&amp;logo=linkedin&amp;logoColor=white.png" class="img-fluid" alt="LinkedIn"></a> <a href="https://github.com/jujubee7"><img src="https://img.shields.io/badge/GitHub-181717?style=flat&amp;logo=github&amp;logoColor=white.png" class="img-fluid" alt="GitHub"></a> <a href="files/TaoJuliaCV.pdf"><img src="https://img.shields.io/badge/CV-PDF-red?style=flat&amp;logo=adobe-acrobat-reader&amp;logoColor=white.png" class="img-fluid" alt="CV"></a> <a href="mailto:jegaubatz@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat&amp;logo=gmail&amp;logoColor=white.png" class="img-fluid" alt="Email"></a></p>
+</div>
+<div id="hero-text" class="quarto-layout-cell" style="flex-basis: 70.0%;justify-content: flex-start;">
 <section id="welcome" class="level2">
-<h2 data-anchor-id="welcome">Welcome</h2>
+<h2 class="anchored" data-anchor-id="welcome">Welcome</h2>
 <p>I am an aerospace engineer and MIT Ph.D.&nbsp;specializing in aircraft design, alternative-fuel safety architectures, and flight vehicle testing. My work bridges multi-physics analytical modeling with hands-on hardware prototyping, manufacturing, and testing.</p>
 <p>Based in the <strong>Greater Boston area (Medford, MA)</strong>, I am seeking full-time roles focused on aerospace R&amp;D, systems engineering, and design/test engineering, especially those with a strong hands-on or physical hardware component.</p>
 </section>
 <section id="expertise-core-competencies" class="level2">
-<h2 data-anchor-id="expertise-core-competencies">Expertise &amp; Core Competencies</h2>
+<h2 class="anchored" data-anchor-id="expertise-core-competencies">Expertise &amp; Core Competencies</h2>
 <ul>
 <li><strong>Aircraft Design &amp; Systems:</strong> Multidisciplinary optimization, alternative-fuel systems (hydrogen/methane), requirements definition, and safety frameworks.</li>
 <li><strong>Testing &amp; Fabrication:</strong> UAV flight testing, wind-tunnel experimentation, machining (lathe, mill, waterjet), composite layups, and 3D printing.</li>
@@ -174,20 +223,65 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 <section id="education" class="level2">
-<h2 data-anchor-id="education">Education</h2>
+<h2 class="anchored" data-anchor-id="education">Education</h2>
 <ul>
 <li><strong>Ph.D.&nbsp;in Aircraft Systems Engineering</strong> | Massachusetts Institute of Technology (September 17, 2026)</li>
 <li><strong>M.S. in Aerospace Engineering</strong> | Massachusetts Institute of Technology (June 1, 2023)</li>
 <li><strong>B.S. in Aerospace Engineering (Minor in Mathematics)</strong> | Massachusetts Institute of Technology (June 4, 2021)</li>
 </ul>
+</section>
+</div>
+</div>
+</div>
+<hr>
+<section id="featured-projects-case-studies" class="level2">
+<h2 class="anchored" data-anchor-id="featured-projects-case-studies">Featured Projects &amp; Case Studies</h2>
+<div id="projects-grid">
+
+</div>
+
 
 
 </section>
-</main></div>
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="VUFWJTIwRGVzaWduJTJDV2luZCUyMFR1bm5lbCUyMFRlc3RpbmclMkNGbGlnaHQlMjBUZXN0aW5nJTJDSGFyZHdhcmUlMjBQcm90b3R5cGluZw==" data-listing-date-sort="1682913600000" data-listing-file-modified-sort="1789678848164" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="300">
+<a href="./projects/firefly-uav/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./projects/firefly-uav/pre-tow.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Firefly: Small Deployable Micro-UAV
+</h5>
+<div class="card-text listing-description delink">
+<p>Design and development of stability, control, and pull-spring-actuated folding-tail systems for a rocket-powered micro-UAV.</p>
 </div>
- <!-- /main -->
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Julia Tao
+</div>
+<div class="listing-date">
+May 1, 2023
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
