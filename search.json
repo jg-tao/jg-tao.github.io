@@ -4,28 +4,28 @@
     "href": "index.html",
     "title": "Julia Tao",
     "section": "",
-    "text": "I am a freshly minted PhD in Aerospace Engineering specializing in aircraft systems enegineering. My work bridges rigorous analytical modeling with practical hardware implementation, focusing on high-reliability systems and advanced fluid/thermal architectures.\nI am currently seeking full-time roles in R&D, systems engineering, and advanced design, where I can apply my expertise in multi-physics simulation, optimization, and cross-functional problem-solving."
+    "text": "I am an aerospace engineer and MIT Ph.D. specializing in aircraft design, alternative-fuel safety architectures, and flight vehicle testing. My work bridges multi-physics analytical modeling with hands-on hardware prototyping, manufacturing, and testing.\nBased in the Greater Boston area (Medford, MA), I am seeking full-time roles focused on aerospace R&D, systems engineering, and design/test engineering, especially those with a strong hands-on or physical hardware component."
   },
   {
     "objectID": "index.html#welcome",
     "href": "index.html#welcome",
     "title": "Julia Tao",
     "section": "",
-    "text": "I am a freshly minted PhD in Aerospace Engineering specializing in aircraft systems enegineering. My work bridges rigorous analytical modeling with practical hardware implementation, focusing on high-reliability systems and advanced fluid/thermal architectures.\nI am currently seeking full-time roles in R&D, systems engineering, and advanced design, where I can apply my expertise in multi-physics simulation, optimization, and cross-functional problem-solving."
+    "text": "I am an aerospace engineer and MIT Ph.D. specializing in aircraft design, alternative-fuel safety architectures, and flight vehicle testing. My work bridges multi-physics analytical modeling with hands-on hardware prototyping, manufacturing, and testing.\nBased in the Greater Boston area (Medford, MA), I am seeking full-time roles focused on aerospace R&D, systems engineering, and design/test engineering, especially those with a strong hands-on or physical hardware component."
   },
   {
     "objectID": "index.html#expertise-core-competencies",
     "href": "index.html#expertise-core-competencies",
     "title": "Julia Tao",
     "section": "Expertise & Core Competencies",
-    "text": "Expertise & Core Competencies\n\nSystems & Design: Requirements definition, risk analysis, thermal-fluid systems, and rapid prototyping.\nSimulation & Modeling: Computational fluid dynamics (CFD), finite element analysis, and multi-physics integration.\nProgramming & Tooling: Python, MATLAB, Git, and data visualization workflows."
+    "text": "Expertise & Core Competencies\n\nAircraft Design & Systems: Multidisciplinary optimization, alternative-fuel systems (hydrogen/methane), requirements definition, and safety frameworks.\nTesting & Fabrication: UAV flight testing, wind-tunnel experimentation, machining (lathe, mill, waterjet), composite layups, and 3D printing.\nSimulation & Software: Python, MATLAB, SolidWorks, AVL, XFOIL, and custom aerodynamic/thermal modeling tools."
   },
   {
     "objectID": "index.html#education",
     "href": "index.html#education",
     "title": "Julia Tao",
     "section": "Education",
-    "text": "Education\n\nPh.D. in Aircraft Systems Engineering | Massachusetts Institute of Technology (September 2026)\nM.S. in Aerospace Engineering | Massachusetts Institute of Technology (May 2023)\nB.S. in Aerospace Engineering | Massachusetts Institute of Technology (June 4, 2021)"
+    "text": "Education\n\nPh.D. in Aircraft Systems Engineering | Massachusetts Institute of Technology (September 17, 2026)\nM.S. in Aerospace Engineering | Massachusetts Institute of Technology (June 1, 2023)\nB.S. in Aerospace Engineering (Minor in Mathematics) | Massachusetts Institute of Technology (June 4, 2021)"
   },
   {
     "objectID": "about.html",
@@ -33,5 +33,33 @@
     "title": "About",
     "section": "",
     "text": "About this site"
+  },
+  {
+    "objectID": "projects/firefly-uav/index.html",
+    "href": "projects/firefly-uav/index.html",
+    "title": "Firefly: Small Deployable Micro-UAV",
+    "section": "",
+    "text": "As part of my S.M. research at the MIT International Center for Air Transportation, I led the design and development of the stability and control system for Firefly—a deployable micro-UAV powered by a slow-burning solid rocket motor.\nThe primary engineering challenge involved engineering a reliable deployment mechanism that could transition seamlessly from a compact stowed rocket configuration to a stable flying wing/tail architecture under high-g flight dynamics.\n\n\n\n\n\n\nFigure 1: Firefly Design Mission"
+  },
+  {
+    "objectID": "projects/firefly-uav/index.html#overview",
+    "href": "projects/firefly-uav/index.html#overview",
+    "title": "Firefly: Small Deployable Micro-UAV",
+    "section": "",
+    "text": "As part of my S.M. research at the MIT International Center for Air Transportation, I led the design and development of the stability and control system for Firefly—a deployable micro-UAV powered by a slow-burning solid rocket motor.\nThe primary engineering challenge involved engineering a reliable deployment mechanism that could transition seamlessly from a compact stowed rocket configuration to a stable flying wing/tail architecture under high-g flight dynamics.\n\n\n\n\n\n\nFigure 1: Firefly Design Mission"
+  },
+  {
+    "objectID": "projects/firefly-uav/index.html#key-contributions-technical-highlights",
+    "href": "projects/firefly-uav/index.html#key-contributions-technical-highlights",
+    "title": "Firefly: Small Deployable Micro-UAV",
+    "section": "Key Contributions & Technical Highlights",
+    "text": "Key Contributions & Technical Highlights\n\nFolding-Tail Mechanism: Designed a pull-spring-actuated folding tail utilizing an oblique hinge that serves as both the physical deployment axis and the aerodynamic actuation axis.\nRapid Prototyping: Iterated rapidly through multiple 3D-printable vehicle iterations to test hinge mechanics, deployment reliability, and structural integrity.\nWind-Tunnel Testing: Built a custom pitch-balance test setup to experimentally evaluate longitudinal stability and controllability across various angles of attack.\nFlight Testing: Conducted unpowered drop tests deployed from a quadcopter platform to capture real-world flight dynamics data.\nValidation: Correlated experimental wind-tunnel and drop-test data against analytical predictions generated via AVL (Athena Vortex Lattice) vortex-lattice methods."
+  },
+  {
+    "objectID": "projects/firefly-uav/index.html#media-gallery",
+    "href": "projects/firefly-uav/index.html#media-gallery",
+    "title": "Firefly: Small Deployable Micro-UAV",
+    "section": "Media & Gallery",
+    "text": "Media & Gallery\n(You can drop your photos, CAD renders, or video clips into this projects/firefly-uav/ folder and embed them here using standard Markdown syntax like ![Caption](image-name.jpg) or HTML video tags).\n\nSystem Overview:\n\n\n\n\n\n\nFigure 2: Firefly Micro-UAV Overview\n\n\n\n\n\nPrototyping & CAD:\n\n\n\n\n\n\nFigure 3: Pull-spring tail actuation for stability and control.\n\n\n\n\n\n\n\n\n\nFigure 4: As-built glide test vehicle before final integration\n\n\n\n\n\nWind Tunnel Setup:\n\n\n\n\n\n\nFigure 5: Designed custom pitch balance to measure lift, drag, and pitching moment simultaneously during wing-tunnel testing.\n\n\n\n\n\n\n\n\n\nFigure 6: Wind Tunnel Testing\n\n\n\n\n\n\n\n\n\nFigure 7: 3D-printed fin angle protractor enabled measurement of pitching moment vs. fin deflection angle curve (\\(C_{m_{coll}}\\)).\n\n\n\n\n\nFlight Drop Test:\n\n\n\n\n\n\nFigure 8: As-built glide test vehicle at glide test field\n\n\n\n\n\n\nYour browser does not support the video tag."
   }
 ]

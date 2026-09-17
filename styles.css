@@ -1,1 +1,6 @@
 /* css styles */
+/* Center all figure captions across the site */
+figure figcaption, 
+.quarto-figure figcaption {
+  text-align: center;
+}

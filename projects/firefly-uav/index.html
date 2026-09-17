@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Julia Tao">
+<meta name="dcterms.date" content="2023-05-01">
+<meta name="description" content="Design and development of stability, control, and pull-spring-actuated folding-tail systems for a rocket-powered micro-UAV.">
 
-<title>Julia Tao – jujubee7.github.io</title>
+<title>Firefly: Small Deployable Micro-UAV – jujubee7.github.io</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,22 +32,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-172ba59bd5e0b52282274ba0c0cc16fc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-172ba59bd5e0b52282274ba0c0cc16fc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,8 +77,37 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -84,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">jujubee7.github.io</span>
     </a>
   </div>
@@ -95,11 +128,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -116,74 +149,195 @@ ul.task-list li input[type="checkbox"] {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
+   
   <ul>
-  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome</a></li>
-  <li><a href="#expertise-core-competencies" id="toc-expertise-core-competencies" class="nav-link" data-scroll-target="#expertise-core-competencies">Expertise &amp; Core Competencies</a></li>
-  <li><a href="#education" id="toc-education" class="nav-link" data-scroll-target="#education">Education</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#key-contributions-technical-highlights" id="toc-key-contributions-technical-highlights" class="nav-link" data-scroll-target="#key-contributions-technical-highlights">Key Contributions &amp; Technical Highlights</a></li>
+  <li><a href="#media-gallery" id="toc-media-gallery" class="nav-link" data-scroll-target="#media-gallery">Media &amp; Gallery</a>
+  <ul class="collapse">
+  <li><a href="#system-overview" id="toc-system-overview" class="nav-link" data-scroll-target="#system-overview"><strong>System Overview:</strong></a></li>
+  <li><a href="#prototyping-cad" id="toc-prototyping-cad" class="nav-link" data-scroll-target="#prototyping-cad"><strong>Prototyping &amp; CAD:</strong></a></li>
+  <li><a href="#wind-tunnel-setup" id="toc-wind-tunnel-setup" class="nav-link" data-scroll-target="#wind-tunnel-setup"><strong>Wind Tunnel Setup:</strong></a></li>
+  <li><a href="#flight-drop-test" id="toc-flight-drop-test" class="nav-link" data-scroll-target="#flight-drop-test"><strong>Flight Drop Test:</strong></a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<div class="quarto-about-trestles">
-  <div class="about-entity">
-    <img src="profile.jpg" class="about-image
-  round " style="height: 20em; width: 20em;">
+<main class="content" id="quarto-document-content">
+
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Julia Tao</h1>
+<h1 class="title">Firefly: Small Deployable Micro-UAV</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">UAV Design</div>
+    <div class="quarto-category">Wind Tunnel Testing</div>
+    <div class="quarto-category">Flight Testing</div>
+    <div class="quarto-category">Hardware Prototyping</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Design and development of stability, control, and pull-spring-actuated folding-tail systems for a rocket-powered micro-UAV.
+  </div>
 </div>
+
+
 <div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Julia Tao </p>
+          </div>
   </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">May 1, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
 </header>
-    <div class="about-links">
-  <a href="https://linkedin.com/in/your-profile" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="https://github.com/jujubee7" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">GitHub</span>
-  </a>
-  <a href="/files/TaoJuliaCV.pdf" class="about-link" rel="" target="">
-    <i class="bi bi-file-earmark-pdf"></i>
-     <span class="about-link-text">CV</span>
-  </a>
-  <a href="mailto:jgaub@alum.mit.edu" class="about-link" rel="" target="">
-    <i class="bi bi-envelope"></i>
-     <span class="about-link-text">Email</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents"><main class="content" id="quarto-document-content">
 
-<section id="welcome" class="level2">
-<h2 data-anchor-id="welcome">Welcome</h2>
-<p>I am an aerospace engineer and MIT Ph.D.&nbsp;specializing in aircraft design, alternative-fuel safety architectures, and flight vehicle testing. My work bridges multi-physics analytical modeling with hands-on hardware prototyping, manufacturing, and testing.</p>
-<p>Based in the <strong>Greater Boston area (Medford, MA)</strong>, I am seeking full-time roles focused on aerospace R&amp;D, systems engineering, and design/test engineering, especially those with a strong hands-on or physical hardware component.</p>
+
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>As part of my S.M. research at the MIT International Center for Air Transportation, I led the design and development of the stability and control system for <strong>Firefly</strong>—a deployable micro-UAV powered by a slow-burning solid rocket motor.</p>
+<p>The primary engineering challenge involved engineering a reliable deployment mechanism that could transition seamlessly from a compact stowed rocket configuration to a stable flying wing/tail architecture under high-g flight dynamics.</p>
+<div id="fig-firefly-mission" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-firefly-mission-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="conops.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-firefly-mission-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Firefly Design Mission
+</figcaption>
+</figure>
+</div>
 </section>
-<section id="expertise-core-competencies" class="level2">
-<h2 data-anchor-id="expertise-core-competencies">Expertise &amp; Core Competencies</h2>
+<section id="key-contributions-technical-highlights" class="level2">
+<h2 class="anchored" data-anchor-id="key-contributions-technical-highlights">Key Contributions &amp; Technical Highlights</h2>
 <ul>
-<li><strong>Aircraft Design &amp; Systems:</strong> Multidisciplinary optimization, alternative-fuel systems (hydrogen/methane), requirements definition, and safety frameworks.</li>
-<li><strong>Testing &amp; Fabrication:</strong> UAV flight testing, wind-tunnel experimentation, machining (lathe, mill, waterjet), composite layups, and 3D printing.</li>
-<li><strong>Simulation &amp; Software:</strong> Python, MATLAB, SolidWorks, AVL, XFOIL, and custom aerodynamic/thermal modeling tools.</li>
+<li><strong>Folding-Tail Mechanism:</strong> Designed a pull-spring-actuated folding tail utilizing an oblique hinge that serves as both the physical deployment axis and the aerodynamic actuation axis.</li>
+<li><strong>Rapid Prototyping:</strong> Iterated rapidly through multiple 3D-printable vehicle iterations to test hinge mechanics, deployment reliability, and structural integrity.</li>
+<li><strong>Wind-Tunnel Testing:</strong> Built a custom pitch-balance test setup to experimentally evaluate longitudinal stability and controllability across various angles of attack.</li>
+<li><strong>Flight Testing:</strong> Conducted unpowered drop tests deployed from a quadcopter platform to capture real-world flight dynamics data.</li>
+<li><strong>Validation:</strong> Correlated experimental wind-tunnel and drop-test data against analytical predictions generated via AVL (Athena Vortex Lattice) vortex-lattice methods.</li>
 </ul>
 </section>
-<section id="education" class="level2">
-<h2 data-anchor-id="education">Education</h2>
-<ul>
-<li><strong>Ph.D.&nbsp;in Aircraft Systems Engineering</strong> | Massachusetts Institute of Technology (September 17, 2026)</li>
-<li><strong>M.S. in Aerospace Engineering</strong> | Massachusetts Institute of Technology (June 1, 2023)</li>
-<li><strong>B.S. in Aerospace Engineering (Minor in Mathematics)</strong> | Massachusetts Institute of Technology (June 4, 2021)</li>
-</ul>
-
-
-</section>
-</main></div>
+<section id="media-gallery" class="level2">
+<h2 class="anchored" data-anchor-id="media-gallery">Media &amp; Gallery</h2>
+<p><em>(You can drop your photos, CAD renders, or video clips into this <code>projects/firefly-uav/</code> folder and embed them here using standard Markdown syntax like <code>![Caption](image-name.jpg)</code> or HTML video tags).</em></p>
+<section id="system-overview" class="level3">
+<h3 class="anchored" data-anchor-id="system-overview"><strong>System Overview:</strong></h3>
+<div id="fig-firefly-overview" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-firefly-overview-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="overview.png" class="img-fluid figure-img" style="width:70.0%">
 </div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-firefly-overview-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Firefly Micro-UAV Overview
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="prototyping-cad" class="level3">
+<h3 class="anchored" data-anchor-id="prototyping-cad"><strong>Prototyping &amp; CAD:</strong></h3>
+<div id="fig-firefly-control_strat" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-firefly-control_strat-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="control_mech.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-firefly-control_strat-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Pull-spring tail actuation for stability and control.
+</figcaption>
+</figure>
+</div>
+<div id="fig-firefly-hardware" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-firefly-hardware-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="exploded_glide_test_vehicle.jpg" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-firefly-hardware-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: As-built glide test vehicle before final integration
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="wind-tunnel-setup" class="level3">
+<h3 class="anchored" data-anchor-id="wind-tunnel-setup"><strong>Wind Tunnel Setup:</strong></h3>
+<div id="fig-firefly-windtunnelCAD" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-firefly-windtunnelCAD-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="wind_tunnel_cad.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-firefly-windtunnelCAD-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: Designed custom pitch balance to measure lift, drag, and pitching moment simultaneously during wing-tunnel testing.
+</figcaption>
+</figure>
+</div>
+<div id="fig-firefly-windtunnelphoto" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-firefly-windtunnelphoto-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="wttsphoto.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-firefly-windtunnelphoto-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: Wind Tunnel Testing
+</figcaption>
+</figure>
+</div>
+<div id="fig-firefly-fin_protractor" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-firefly-fin_protractor-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="fin_protractor.png" class="img-fluid figure-img" style="width:50.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-firefly-fin_protractor-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7: 3D-printed fin angle protractor enabled measurement of pitching moment vs.&nbsp;fin deflection angle curve (<span class="math inline">\(C_{m_{coll}}\)</span>).
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="flight-drop-test" class="level3">
+<h3 class="anchored" data-anchor-id="flight-drop-test"><strong>Flight Drop Test:</strong></h3>
+<div id="fig-firefly-at_field" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-firefly-at_field-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="full_vehicle_at_flight_field.jpg" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-firefly-at_field-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8: As-built glide test vehicle at glide test field
+</figcaption>
+</figure>
+</div>
+<div style="max-width: 700px; margin: 0 auto;">
+<video width="100%" controls="" muted="" autoplay="" loop="">
+<source src="FPV.mp4" type="video/mp4">
+Your browser does not support the video tag. </video>
+</div>
+
+
+</section></section></main></div>
+
+
+
  <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
@@ -575,7 +729,7 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
-</div> <!-- /content -->
+ <!-- /content -->
 
 
 
