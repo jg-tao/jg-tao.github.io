@@ -1,0 +1,29 @@
+---
+title: "Solar-Electric Seaplane: TA for undergraduate aircraft engineering (16.821) capstone"
+description: ""
+date: "2023-05-01"
+categories: [Hardware Prototyping]
+image: "Flight1_02402.JPG"  # Drop a hero image in this folder and name it feature.jpg
+---
+
+## Overview
+
+
+## Key Contributions & Technical Highlights
+* **Placeholder:** placeholder
+
+
+## Media & Gallery
+
+### **L3 Rocket Certification Flight:** 
+::: {#fig-seaplane-2}
+![](Flight1_02405.JPG){width="70%"}
+
+L3 flight
+:::
+
+::: {#fig-seaplane-3}
+![](Flight1_02407.JPG){width="70%"}
+
+Recovery
+:::

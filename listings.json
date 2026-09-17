@@ -2,13 +2,23 @@
   {
     "listing": "/projects/index.html",
     "items": [
-      "/projects/firefly-uav/index.html"
+      "/projects/phd/index.html",
+      "/projects/firefly-uav/index.html",
+      "/projects/seaplane/index.html",
+      "/projects/lathe/index.html",
+      "/projects/dawn/index.html",
+      "/projects/rocketry/index.html"
     ]
   },
   {
     "listing": "/index.html",
     "items": [
-      "/projects/firefly-uav/index.html"
+      "/projects/phd/index.html",
+      "/projects/firefly-uav/index.html",
+      "/projects/seaplane/index.html",
+      "/projects/lathe/index.html",
+      "/projects/dawn/index.html",
+      "/projects/rocketry/index.html"
     ]
   }
 ]

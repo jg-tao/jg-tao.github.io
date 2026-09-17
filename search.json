@@ -1,45 +1,52 @@
 [
   {
+    "objectID": "projects/seaplane/index.html#key-contributions-technical-highlights",
+    "href": "projects/seaplane/index.html#key-contributions-technical-highlights",
+    "title": "Solar-Electric Seaplane",
+    "section": "Key Contributions & Technical Highlights",
+    "text": "Key Contributions & Technical Highlights\n\nPlaceholder: some stuff"
+  },
+  {
+    "objectID": "projects/seaplane/index.html#media-gallery",
+    "href": "projects/seaplane/index.html#media-gallery",
+    "title": "Solar-Electric Seaplane",
+    "section": "Media & Gallery",
+    "text": "Media & Gallery\n\nL3 Rocket Certification Flight:\n\n\n\n\n\n\nFigure 1: L3 flight\n\n\n\n\n\n\n\n\n\nFigure 2: Recovery"
+  },
+  {
+    "objectID": "projects/phd/index.html#key-contributions-technical-highlights",
+    "href": "projects/phd/index.html#key-contributions-technical-highlights",
+    "title": "PhD Research: Integrating Safety Constraints Into Early-Stage Design of Hydrogen and Methane Aircraft",
+    "section": "Key Contributions & Technical Highlights",
+    "text": "Key Contributions & Technical Highlights\n\nPlaceholder: placeholder"
+  },
+  {
+    "objectID": "projects/phd/index.html#media-gallery",
+    "href": "projects/phd/index.html#media-gallery",
+    "title": "PhD Research: Integrating Safety Constraints Into Early-Stage Design of Hydrogen and Methane Aircraft",
+    "section": "Media & Gallery",
+    "text": "Media & Gallery\n\nL3 Rocket Certification Flight:\n\n\n\n\n\n\nFigure 1: L3 flight"
+  },
+  {
     "objectID": "projects/index.html",
     "href": "projects/index.html",
     "title": "Projects & Case Studies",
     "section": "",
-    "text": "Welcome to my engineering portfolio. Here you will find detailed case studies highlighting my work in aircraft design, alternative-fuel safety systems, UAV prototyping, and hardware testing.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFirefly: Small Deployable Micro-UAV\n\n\n\nUAV Design\n\nWind Tunnel Testing\n\nFlight Testing\n\nHardware Prototyping\n\n\n\nDesign and development of stability, control, and pull-spring-actuated folding-tail systems for a rocket-powered micro-UAV.\n\n\n\nJulia Tao\n\n\nMay 1, 2023\n\n\n\n\n\n\nNo matching items"
+    "text": "Welcome to my engineering portfolio. Here you will find detailed case studies highlighting my work in aircraft design, alternative-fuel safety systems, UAV prototyping, and hardware testing.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPhD Research: Integrating Safety Constraints Into Early-Stage Design of Hydrogen and Methane Aircraft\n\n\n\nHardware Prototyping\n\n\n\n\n\n\n\n\n\n\nAug 13, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nFirefly: Small Deployable Micro-UAV\n\n\n\nUAV Design\n\nWind Tunnel Testing\n\nFlight Testing\n\nHardware Prototyping\n\n\n\nDesign and development of stability, control, and pull-spring-actuated folding-tail systems for a rocket-powered micro-UAV.\n\n\n\n\n\n\nMay 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolar-Electric Seaplane\n\n\n\nHardware Prototyping\n\n\n\nTA for undergraduate aircraft engineering capstone\n\n\n\n\n\n\nMay 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\nDesktop Lathe\n\n\n\nHardware Prototyping\n\n\n\n\n\n\n\n\n\n\nMay 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\nDawn: Solar High-Alitude Long Endurance Aircraft Propulsion\n\n\n\nHardware Prototyping\n\n\n\n\n\n\n\n\n\n\nMay 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nRocketry: Hobby and MIT Rocket Team\n\n\n\nHardware Prototyping\n\n\n\n\n\n\n\n\n\n\nAug 1, 2020\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "jujubee7.github.io",
-    "section": "",
-    "text": "Julia Tao\n   \n\n\n\n\nI am an aerospace engineer and MIT Ph.D. specializing in aircraft design, alternative-fuel safety architectures, and flight vehicle testing. My work bridges multi-physics analytical modeling with hands-on hardware prototyping, manufacturing, and testing.\nBased in the Greater Boston area (Medford, MA), I am seeking full-time roles focused on aerospace R&D, systems engineering, and design/test engineering, especially those with a strong hands-on or physical hardware component.\n\n\n\n\nAircraft Design & Systems: Multidisciplinary optimization, alternative-fuel systems (hydrogen/methane), requirements definition, and safety frameworks.\nTesting & Fabrication: UAV flight testing, wind-tunnel experimentation, machining (lathe, mill, waterjet), composite layups, and 3D printing.\nSimulation & Software: Python, MATLAB, SolidWorks, AVL, XFOIL, and custom aerodynamic/thermal modeling tools.\n\n\n\n\n\nPh.D. in Aircraft Systems Engineering | Massachusetts Institute of Technology (September 17, 2026)\nM.S. in Aerospace Engineering | Massachusetts Institute of Technology (June 1, 2023)\nB.S. in Aerospace Engineering (Minor in Mathematics) | Massachusetts Institute of Technology (June 4, 2021)"
+    "objectID": "projects/dawn/index.html#key-contributions-technical-highlights",
+    "href": "projects/dawn/index.html#key-contributions-technical-highlights",
+    "title": "Dawn: Solar High-Alitude Long Endurance Aircraft Propulsion",
+    "section": "Key Contributions & Technical Highlights",
+    "text": "Key Contributions & Technical Highlights\n\nPlaceholder: some stuff"
   },
   {
-    "objectID": "index.html#welcome",
-    "href": "index.html#welcome",
-    "title": "jujubee7.github.io",
-    "section": "",
-    "text": "I am an aerospace engineer and MIT Ph.D. specializing in aircraft design, alternative-fuel safety architectures, and flight vehicle testing. My work bridges multi-physics analytical modeling with hands-on hardware prototyping, manufacturing, and testing.\nBased in the Greater Boston area (Medford, MA), I am seeking full-time roles focused on aerospace R&D, systems engineering, and design/test engineering, especially those with a strong hands-on or physical hardware component."
-  },
-  {
-    "objectID": "index.html#expertise-core-competencies",
-    "href": "index.html#expertise-core-competencies",
-    "title": "jujubee7.github.io",
-    "section": "",
-    "text": "Aircraft Design & Systems: Multidisciplinary optimization, alternative-fuel systems (hydrogen/methane), requirements definition, and safety frameworks.\nTesting & Fabrication: UAV flight testing, wind-tunnel experimentation, machining (lathe, mill, waterjet), composite layups, and 3D printing.\nSimulation & Software: Python, MATLAB, SolidWorks, AVL, XFOIL, and custom aerodynamic/thermal modeling tools."
-  },
-  {
-    "objectID": "index.html#education",
-    "href": "index.html#education",
-    "title": "jujubee7.github.io",
-    "section": "",
-    "text": "Ph.D. in Aircraft Systems Engineering | Massachusetts Institute of Technology (September 17, 2026)\nM.S. in Aerospace Engineering | Massachusetts Institute of Technology (June 1, 2023)\nB.S. in Aerospace Engineering (Minor in Mathematics) | Massachusetts Institute of Technology (June 4, 2021)"
-  },
-  {
-    "objectID": "index.html#projects-case-studies",
-    "href": "index.html#projects-case-studies",
-    "title": "jujubee7.github.io",
-    "section": "Projects & Case Studies",
-    "text": "Projects & Case Studies"
+    "objectID": "projects/dawn/index.html#media-gallery",
+    "href": "projects/dawn/index.html#media-gallery",
+    "title": "Dawn: Solar High-Alitude Long Endurance Aircraft Propulsion",
+    "section": "Media & Gallery",
+    "text": "Media & Gallery\n\nL3 Rocket Certification Flight:\n\n\n\n\n\n\nFigure 1: L3 flight\n\n\n\n\n\n\n\n\n\nFigure 2: Recovery"
   },
   {
     "objectID": "about.html",
@@ -47,6 +54,41 @@
     "title": "About",
     "section": "",
     "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Julia Tao",
+    "section": "",
+    "text": "I am an aerospace engineer and MIT Ph.D. specializing in aircraft design, alternative-fuel safety architectures, and flight vehicle testing. My work bridges multi-physics analytical modeling with hands-on hardware prototyping, manufacturing, and testing.\nBased in the Greater Boston area (Medford, MA), I am seeking full-time roles focused on aerospace R&D, systems engineering, and design/test engineering, especially those with a strong hands-on or physical hardware component.\n\n\n\n\nAircraft Design & Systems: Multidisciplinary optimization, alternative-fuel systems (hydrogen/methane), requirements definition, and safety frameworks.\nTesting & Fabrication: UAV flight testing, wind-tunnel experimentation, machining (lathe, mill, waterjet), composite layups, and 3D printing.\nSimulation & Software: Python, MATLAB, SolidWorks, AVL, XFOIL, and custom aerodynamic/thermal modeling tools.\n\n\n\n\n\nPh.D. in Aircraft Systems Engineering | Massachusetts Institute of Technology (September 17, 2026)\nM.S. in Aerospace Engineering | Massachusetts Institute of Technology (June 1, 2023)\nB.S. in Aerospace Engineering (Minor in Mathematics) | Massachusetts Institute of Technology (June 4, 2021)"
+  },
+  {
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "Julia Tao",
+    "section": "",
+    "text": "I am an aerospace engineer and MIT Ph.D. specializing in aircraft design, alternative-fuel safety architectures, and flight vehicle testing. My work bridges multi-physics analytical modeling with hands-on hardware prototyping, manufacturing, and testing.\nBased in the Greater Boston area (Medford, MA), I am seeking full-time roles focused on aerospace R&D, systems engineering, and design/test engineering, especially those with a strong hands-on or physical hardware component."
+  },
+  {
+    "objectID": "index.html#expertise-core-competencies",
+    "href": "index.html#expertise-core-competencies",
+    "title": "Julia Tao",
+    "section": "",
+    "text": "Aircraft Design & Systems: Multidisciplinary optimization, alternative-fuel systems (hydrogen/methane), requirements definition, and safety frameworks.\nTesting & Fabrication: UAV flight testing, wind-tunnel experimentation, machining (lathe, mill, waterjet), composite layups, and 3D printing.\nSimulation & Software: Python, MATLAB, SolidWorks, AVL, XFOIL, and custom aerodynamic/thermal modeling tools."
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Julia Tao",
+    "section": "",
+    "text": "Ph.D. in Aircraft Systems Engineering | Massachusetts Institute of Technology (September 17, 2026)\nM.S. in Aerospace Engineering | Massachusetts Institute of Technology (June 1, 2023)\nB.S. in Aerospace Engineering (Minor in Mathematics) | Massachusetts Institute of Technology (June 4, 2021)"
+  },
+  {
+    "objectID": "index.html#portfolio",
+    "href": "index.html#portfolio",
+    "title": "Julia Tao",
+    "section": "Portfolio",
+    "text": "Portfolio"
   },
   {
     "objectID": "projects/firefly-uav/index.html",
@@ -75,5 +117,33 @@
     "title": "Firefly: Small Deployable Micro-UAV",
     "section": "Media & Gallery",
     "text": "Media & Gallery\n(You can drop your photos, CAD renders, or video clips into this projects/firefly-uav/ folder and embed them here using standard Markdown syntax like ![Caption](image-name.jpg) or HTML video tags).\n\nSystem Overview:\n\n\n\n\n\n\nFigure 2: Firefly Micro-UAV Overview\n\n\n\n\n\nPrototyping & CAD:\n\n\n\n\n\n\nFigure 3: Pull-spring tail actuation for stability and control.\n\n\n\n\n\n\n\n\n\nFigure 4: As-built glide test vehicle before final integration\n\n\n\n\n\nWind Tunnel Setup:\n\n\n\n\n\n\nFigure 5: Designed custom pitch balance to measure lift, drag, and pitching moment simultaneously during wing-tunnel testing.\n\n\n\n\n\n\n\n\n\nFigure 6: Wind Tunnel Testing\n\n\n\n\n\n\n\n\n\nFigure 7: 3D-printed fin angle protractor enabled measurement of pitching moment vs. fin deflection angle curve (\\(C_{m_{coll}}\\)).\n\n\n\n\n\nFlight Drop Test:\n\n\n\n\n\n\nFigure 8: As-built glide test vehicle at glide test field\n\n\n\n\n\n\nYour browser does not support the video tag."
+  },
+  {
+    "objectID": "projects/lathe/index.html#key-contributions-technical-highlights",
+    "href": "projects/lathe/index.html#key-contributions-technical-highlights",
+    "title": "Desktop Lathe",
+    "section": "Key Contributions & Technical Highlights",
+    "text": "Key Contributions & Technical Highlights\n\nPlaceholder: some stuff"
+  },
+  {
+    "objectID": "projects/lathe/index.html#media-gallery",
+    "href": "projects/lathe/index.html#media-gallery",
+    "title": "Desktop Lathe",
+    "section": "Media & Gallery",
+    "text": "Media & Gallery\n\nL3 Rocket Certification Flight:\n\n\n\n\n\n\nFigure 1: L3 flight\n\n\n\n\n\n\n\n\n\nFigure 2: Recovery"
+  },
+  {
+    "objectID": "projects/rocketry/index.html#key-contributions-technical-highlights",
+    "href": "projects/rocketry/index.html#key-contributions-technical-highlights",
+    "title": "Rocketry: Hobby and MIT Rocket Team",
+    "section": "Key Contributions & Technical Highlights",
+    "text": "Key Contributions & Technical Highlights\n\nPlaceholder: placeholder"
+  },
+  {
+    "objectID": "projects/rocketry/index.html#media-gallery",
+    "href": "projects/rocketry/index.html#media-gallery",
+    "title": "Rocketry: Hobby and MIT Rocket Team",
+    "section": "Media & Gallery",
+    "text": "Media & Gallery\n\nL3 Rocket Certification Flight:\n\n\n\n\n\n\nFigure 1: L3 flight"
   }
 ]
