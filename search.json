@@ -2,9 +2,30 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "jujubee7.github.io",
+    "title": "Julia Tao",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "I am a freshly minted PhD in Aerospace Engineering specializing in aircraft systems enegineering. My work bridges rigorous analytical modeling with practical hardware implementation, focusing on high-reliability systems and advanced fluid/thermal architectures.\nI am currently seeking full-time roles in R&D, systems engineering, and advanced design, where I can apply my expertise in multi-physics simulation, optimization, and cross-functional problem-solving."
+  },
+  {
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "Julia Tao",
+    "section": "",
+    "text": "I am a freshly minted PhD in Aerospace Engineering specializing in aircraft systems enegineering. My work bridges rigorous analytical modeling with practical hardware implementation, focusing on high-reliability systems and advanced fluid/thermal architectures.\nI am currently seeking full-time roles in R&D, systems engineering, and advanced design, where I can apply my expertise in multi-physics simulation, optimization, and cross-functional problem-solving."
+  },
+  {
+    "objectID": "index.html#expertise-core-competencies",
+    "href": "index.html#expertise-core-competencies",
+    "title": "Julia Tao",
+    "section": "Expertise & Core Competencies",
+    "text": "Expertise & Core Competencies\n\nSystems & Design: Requirements definition, risk analysis, thermal-fluid systems, and rapid prototyping.\nSimulation & Modeling: Computational fluid dynamics (CFD), finite element analysis, and multi-physics integration.\nProgramming & Tooling: Python, MATLAB, Git, and data visualization workflows."
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Julia Tao",
+    "section": "Education",
+    "text": "Education\n\nPh.D. in Aircraft Systems Engineering | Massachusetts Institute of Technology (September 2026)\nM.S. in Aerospace Engineering | Massachusetts Institute of Technology (May 2023)\nB.S. in Aerospace Engineering | Massachusetts Institute of Technology (June 4, 2021)"
   },
   {
     "objectID": "about.html",
