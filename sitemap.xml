@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://jujubee7.github.io/projects/index.html</loc>
+    <lastmod>2026-09-17T21:00:01.378Z</lastmod>
+  </url>
+  <url>
     <loc>https://jujubee7.github.io/index.html</loc>
     <lastmod>2026-09-17T19:47:47.680Z</lastmod>
   </url>
@@ -10,6 +14,6 @@
   </url>
   <url>
     <loc>https://jujubee7.github.io/projects/firefly-uav/index.html</loc>
-    <lastmod>2026-09-17T20:57:29.433Z</lastmod>
+    <lastmod>2026-09-17T21:00:48.164Z</lastmod>
   </url>
 </urlset>

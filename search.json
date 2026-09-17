@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects & Case Studies",
+    "section": "",
+    "text": "Welcome to my engineering portfolio. Here you will find detailed case studies highlighting my work in aircraft design, alternative-fuel safety systems, UAV prototyping, and hardware testing.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFirefly: Small Deployable Micro-UAV\n\n\n\nUAV Design\n\nWind Tunnel Testing\n\nFlight Testing\n\nHardware Prototyping\n\n\n\nDesign and development of stability, control, and pull-spring-actuated folding-tail systems for a rocket-powered micro-UAV.\n\n\n\nJulia Tao\n\n\nMay 1, 2023\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Julia Tao",
@@ -39,14 +46,14 @@
     "href": "projects/firefly-uav/index.html",
     "title": "Firefly: Small Deployable Micro-UAV",
     "section": "",
-    "text": "As part of my S.M. research at the MIT International Center for Air Transportation, I led the design and development of the stability and control system for Firefly—a deployable micro-UAV powered by a slow-burning solid rocket motor.\nThe primary engineering challenge involved engineering a reliable deployment mechanism that could transition seamlessly from a compact stowed rocket configuration to a stable flying wing/tail architecture under high-g flight dynamics.\n\n\n\n\n\n\nFigure 1: Firefly Design Mission"
+    "text": "As part of my S.M. research at the MIT International Center for Air Transportation, I led the design and development of the stability and control system for Firefly—a deployable micro-UAV powered by a slow-burning solid rocket motor.\nThe primary engineering challenge involved engineering a reliable deployment mechanism that could transition seamlessly from a compact stowed rocket configuration to a stable flying wing/tail architecture under changing vehicle static margin.\n\n\n\n\n\n\nFigure 1: Firefly Design Mission"
   },
   {
     "objectID": "projects/firefly-uav/index.html#overview",
     "href": "projects/firefly-uav/index.html#overview",
     "title": "Firefly: Small Deployable Micro-UAV",
     "section": "",
-    "text": "As part of my S.M. research at the MIT International Center for Air Transportation, I led the design and development of the stability and control system for Firefly—a deployable micro-UAV powered by a slow-burning solid rocket motor.\nThe primary engineering challenge involved engineering a reliable deployment mechanism that could transition seamlessly from a compact stowed rocket configuration to a stable flying wing/tail architecture under high-g flight dynamics.\n\n\n\n\n\n\nFigure 1: Firefly Design Mission"
+    "text": "As part of my S.M. research at the MIT International Center for Air Transportation, I led the design and development of the stability and control system for Firefly—a deployable micro-UAV powered by a slow-burning solid rocket motor.\nThe primary engineering challenge involved engineering a reliable deployment mechanism that could transition seamlessly from a compact stowed rocket configuration to a stable flying wing/tail architecture under changing vehicle static margin.\n\n\n\n\n\n\nFigure 1: Firefly Design Mission"
   },
   {
     "objectID": "projects/firefly-uav/index.html#key-contributions-technical-highlights",
