@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2023-05-01">
-<meta name="description" content="Design and development of stability, control, and pull-spring-actuated folding-tail systems for a rocket-powered micro-UAV.">
+<meta name="dcterms.date" content="2023-06-01">
+<meta name="description" content="Design and development of pull-spring-actuated folding-tail stability and control systems for a rocket-powered micro-UAV.">
 
-<title>Firefly: Small Deployable Micro-UAV – jujubee7.github.io</title>
+<title>Firefly: Deployable-Tail Micro-UAV – jg-tao.github.io</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -117,7 +117,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">jujubee7.github.io</span>
+    <span class="navbar-title">jg-tao.github.io</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -158,10 +158,10 @@ window.Quarto = {
   <li><a href="#key-contributions-technical-highlights" id="toc-key-contributions-technical-highlights" class="nav-link" data-scroll-target="#key-contributions-technical-highlights">Key Contributions &amp; Technical Highlights</a></li>
   <li><a href="#media-gallery" id="toc-media-gallery" class="nav-link" data-scroll-target="#media-gallery">Media &amp; Gallery</a>
   <ul class="collapse">
-  <li><a href="#system-overview" id="toc-system-overview" class="nav-link" data-scroll-target="#system-overview"><strong>System Overview:</strong></a></li>
-  <li><a href="#prototyping-cad" id="toc-prototyping-cad" class="nav-link" data-scroll-target="#prototyping-cad"><strong>Prototyping &amp; CAD:</strong></a></li>
-  <li><a href="#wind-tunnel-setup" id="toc-wind-tunnel-setup" class="nav-link" data-scroll-target="#wind-tunnel-setup"><strong>Wind Tunnel Setup:</strong></a></li>
-  <li><a href="#flight-drop-test" id="toc-flight-drop-test" class="nav-link" data-scroll-target="#flight-drop-test"><strong>Flight Drop Test:</strong></a></li>
+  <li><a href="#system-overview" id="toc-system-overview" class="nav-link" data-scroll-target="#system-overview"><strong>System Overview</strong></a></li>
+  <li><a href="#prototyping-cad" id="toc-prototyping-cad" class="nav-link" data-scroll-target="#prototyping-cad"><strong>Prototyping &amp; CAD</strong></a></li>
+  <li><a href="#wind-tunnel-setup" id="toc-wind-tunnel-setup" class="nav-link" data-scroll-target="#wind-tunnel-setup"><strong>Wind Tunnel Setup</strong></a></li>
+  <li><a href="#glide-testing" id="toc-glide-testing" class="nav-link" data-scroll-target="#glide-testing"><strong>Glide Testing</strong></a></li>
   </ul></li>
   </ul>
 </nav>
@@ -171,7 +171,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Firefly: Small Deployable Micro-UAV</h1>
+<h1 class="title">Firefly: Deployable-Tail Micro-UAV</h1>
   <div class="quarto-categories">
     <div class="quarto-category">UAV Design</div>
     <div class="quarto-category">Wind Tunnel Testing</div>
@@ -182,7 +182,7 @@ window.Quarto = {
 
 <div>
   <div class="description">
-    Design and development of stability, control, and pull-spring-actuated folding-tail systems for a rocket-powered micro-UAV.
+    Design and development of pull-spring-actuated folding-tail stability and control systems for a rocket-powered micro-UAV.
   </div>
 </div>
 
@@ -193,7 +193,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 1, 2023</p>
+      <p class="date">June 1, 2023</p>
     </div>
   </div>
   
@@ -208,14 +208,14 @@ window.Quarto = {
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>As part of my S.M. research at the MIT International Center for Air Transportation, I led the design and development of the stability and control system for <strong>Firefly</strong>—a deployable micro-UAV powered by a slow-burning solid rocket motor.</p>
-<p>The primary engineering challenge involved engineering a reliable deployment mechanism that could transition seamlessly from a compact stowed rocket configuration to a stable flying wing/tail architecture under changing vehicle static margin.</p>
+<p>The challenge involved engineering a reliable tail deployment mechanism that could transition seamlessly from a compact stowed configuration to a stable flying wing/tail architecture under changing vehicle static margin as the solid-rocket motor burned.</p>
 <div id="fig-firefly-mission" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-firefly-mission-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="conops.png" class="img-fluid figure-img" style="width:70.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-firefly-mission-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Firefly Design Mission
+Figure&nbsp;1: Firefly Concept of Operations.
 </figcaption>
 </figure>
 </div>
@@ -226,28 +226,27 @@ Figure&nbsp;1: Firefly Design Mission
 <li><strong>Folding-Tail Mechanism:</strong> Designed a pull-spring-actuated folding tail utilizing an oblique hinge that serves as both the physical deployment axis and the aerodynamic actuation axis.</li>
 <li><strong>Rapid Prototyping:</strong> Iterated rapidly through multiple 3D-printable vehicle iterations to test hinge mechanics, deployment reliability, and structural integrity.</li>
 <li><strong>Wind-Tunnel Testing:</strong> Built a custom pitch-balance test setup to experimentally evaluate longitudinal stability and controllability across various angles of attack.</li>
-<li><strong>Flight Testing:</strong> Conducted unpowered drop tests deployed from a quadcopter platform to capture real-world flight dynamics data.</li>
-<li><strong>Validation:</strong> Correlated experimental wind-tunnel and drop-test data against analytical predictions generated via AVL (Athena Vortex Lattice) vortex-lattice methods.</li>
+<li><strong>Flight Testing:</strong> Conducted unpowered drop tests deployed from a quadcopter to collect stability and controllability data under glide conditions.</li>
+<li><strong>Validation:</strong> Correlated experimental wind-tunnel and drop-test data against analytical predictions generated via AVL (Athena Vortex Lattice).</li>
 </ul>
 </section>
 <section id="media-gallery" class="level2">
 <h2 class="anchored" data-anchor-id="media-gallery">Media &amp; Gallery</h2>
-<p><em>(You can drop your photos, CAD renders, or video clips into this <code>projects/firefly-uav/</code> folder and embed them here using standard Markdown syntax like <code>![Caption](image-name.jpg)</code> or HTML video tags).</em></p>
 <section id="system-overview" class="level3">
-<h3 class="anchored" data-anchor-id="system-overview"><strong>System Overview:</strong></h3>
+<h3 class="anchored" data-anchor-id="system-overview"><strong>System Overview</strong></h3>
 <div id="fig-firefly-overview" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-firefly-overview-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="overview.png" class="img-fluid figure-img" style="width:70.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-firefly-overview-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: Firefly Micro-UAV Overview
+Figure&nbsp;2: Firefly Micro-UAV Parts and Systems Overview.
 </figcaption>
 </figure>
 </div>
 </section>
 <section id="prototyping-cad" class="level3">
-<h3 class="anchored" data-anchor-id="prototyping-cad"><strong>Prototyping &amp; CAD:</strong></h3>
+<h3 class="anchored" data-anchor-id="prototyping-cad"><strong>Prototyping &amp; CAD</strong></h3>
 <div id="fig-firefly-control_strat" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-firefly-control_strat-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -264,20 +263,20 @@ Figure&nbsp;3: Pull-spring tail actuation for stability and control.
 <img src="exploded_glide_test_vehicle.jpg" class="img-fluid figure-img" style="width:70.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-firefly-hardware-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4: As-built glide test vehicle before final integration
+Figure&nbsp;4: As-built glide test vehicle before final integration.
 </figcaption>
 </figure>
 </div>
 </section>
 <section id="wind-tunnel-setup" class="level3">
-<h3 class="anchored" data-anchor-id="wind-tunnel-setup"><strong>Wind Tunnel Setup:</strong></h3>
+<h3 class="anchored" data-anchor-id="wind-tunnel-setup"><strong>Wind Tunnel Setup</strong></h3>
 <div id="fig-firefly-windtunnelCAD" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-firefly-windtunnelCAD-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="wind_tunnel_cad.png" class="img-fluid figure-img" style="width:70.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-firefly-windtunnelCAD-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;5: Designed custom pitch balance to measure lift, drag, and pitching moment simultaneously during wing-tunnel testing.
+Figure&nbsp;5: Designed custom pitch balance to measure lift, drag, and pitching moment simultaneously during wing-tunnel testing. Internal sting attachment allows vehicle mounting at 2 degree angle of attack increments.
 </figcaption>
 </figure>
 </div>
@@ -287,14 +286,14 @@ Figure&nbsp;5: Designed custom pitch balance to measure lift, drag, and pitching
 <img src="wttsphoto.png" class="img-fluid figure-img" style="width:70.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-firefly-windtunnelphoto-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6: Wind Tunnel Testing
+Figure&nbsp;6: As-built sting and wind tunnel test vehicle.
 </figcaption>
 </figure>
 </div>
 <div id="fig-firefly-fin_protractor" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-firefly-fin_protractor-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="fin_protractor.png" class="img-fluid figure-img" style="width:50.0%">
+<img src="fin_protractor.png" class="img-fluid figure-img" style="width:30.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-firefly-fin_protractor-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;7: 3D-printed fin angle protractor enabled measurement of pitching moment vs.&nbsp;fin deflection angle curve (<span class="math inline">\(C_{m_{coll}}\)</span>).
@@ -302,18 +301,31 @@ Figure&nbsp;7: 3D-printed fin angle protractor enabled measurement of pitching m
 </figure>
 </div>
 </section>
-<section id="flight-drop-test" class="level3">
-<h3 class="anchored" data-anchor-id="flight-drop-test"><strong>Flight Drop Test:</strong></h3>
+<section id="glide-testing" class="level3">
+<h3 class="anchored" data-anchor-id="glide-testing"><strong>Glide Testing</strong></h3>
 <div id="fig-firefly-at_field" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-firefly-at_field-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="full_vehicle_at_flight_field.jpg" class="img-fluid figure-img" style="width:70.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-firefly-at_field-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8: As-built glide test vehicle at glide test field
+Figure&nbsp;8: As-built glide test vehicle at test field.
 </figcaption>
 </figure>
 </div>
+Towing to drop altitude:
+<div style="max-width: 700px; margin: 0 auto;">
+<video width="50%" controls="" muted="" autoplay="" loop="">
+<source src="tow.mp4" type="video/mp4">
+Your browser does not support the video tag. </video>
+</div>
+Drop from quadcopter view:
+<div style="max-width: 700px; margin: 0 auto;">
+<video width="100%" controls="" muted="" autoplay="" loop="">
+<source src="drop_from_quad.mp4" type="video/mp4">
+Your browser does not support the video tag. </video>
+</div>
+First person view of glide test:
 <div style="max-width: 700px; margin: 0 auto;">
 <video width="100%" controls="" muted="" autoplay="" loop="">
 <source src="FPV.mp4" type="video/mp4">
@@ -322,6 +334,8 @@ Your browser does not support the video tag. </video>
 
 
 </section></section></main></div>
+
+
 
 
 
@@ -399,7 +413,7 @@ Your browser does not support the video tag. </video>
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/jujubee7\.github\.io\/");
+        var filterRegex = new RegExp("https:\/\/jg-tao\.github\.io\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

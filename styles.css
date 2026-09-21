@@ -4,3 +4,17 @@ figure figcaption,
 .quarto-figure figcaption {
   text-align: center;
 }
+
+/* Ensure grid card images scale safely inside the box without overflowing */
+.quarto-grid-item .card-img-top {
+  width: 100% !important;
+  height: 160px !important;       /* Controls the fixed height of the thumbnail area */
+  object-fit: contain !important; /* Scales the full image to fit without cropping */
+  object-position: center !important;
+  background-color: #ffffff;      /* Keeps the background clean and white */
+}
+
+/* Ensure the wrapper respects the card boundaries */
+.quarto-grid-item .card {
+  overflow: hidden;
+}

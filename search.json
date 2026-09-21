@@ -1,38 +1,66 @@
 [
   {
+    "objectID": "projects/seaplane/index.html",
+    "href": "projects/seaplane/index.html",
+    "title": "Solar-Electric Seaplane",
+    "section": "",
+    "text": "Serving as a Teaching Assistant (TA) for the undergraduate aircraft engineering capstone, this project involved mentoring student teams through the part-design, fabrication, bench-testing, and flight-testing phases of a 4-meter wingspan solar-electric seaplane."
+  },
+  {
+    "objectID": "projects/seaplane/index.html#overview",
+    "href": "projects/seaplane/index.html#overview",
+    "title": "Solar-Electric Seaplane",
+    "section": "",
+    "text": "Serving as a Teaching Assistant (TA) for the undergraduate aircraft engineering capstone, this project involved mentoring student teams through the part-design, fabrication, bench-testing, and flight-testing phases of a 4-meter wingspan solar-electric seaplane."
+  },
+  {
     "objectID": "projects/seaplane/index.html#key-contributions-technical-highlights",
     "href": "projects/seaplane/index.html#key-contributions-technical-highlights",
     "title": "Solar-Electric Seaplane",
     "section": "Key Contributions & Technical Highlights",
-    "text": "Key Contributions & Technical Highlights\n\nPlaceholder: some stuff"
+    "text": "Key Contributions & Technical Highlights\n\nPrototyping & Manufacturing Support: Taught laboratory manufacturing techniques, including composite layups and control mechanism integration.\nFlight Testing & Validation: Oversaw flight-line operations, telemetry monitoring, and safety-of-flight protocols during initial water takeoff and landing trials.\nLogistics & Challenge-Resolution: Coordinated assignments, grading, and communication between students and faculty, actively bridging the gap for struggling student teams to keep them on track."
   },
   {
     "objectID": "projects/seaplane/index.html#media-gallery",
     "href": "projects/seaplane/index.html#media-gallery",
     "title": "Solar-Electric Seaplane",
     "section": "Media & Gallery",
-    "text": "Media & Gallery\n\nL3 Rocket Certification Flight:\n\n\n\n\n\n\nFigure 1: L3 flight\n\n\n\n\n\n\n\n\n\nFigure 2: Recovery"
+    "text": "Media & Gallery\n\n\n\n\n\n\nFigure 1: Pre-flight.\n\n\n\n\n\n\n\n\n\nFigure 2: Initial takeoff run during flight testing.\n\n\n\n\n\n\n\n\n\nFigure 3: Airborne phase of the solar-electric seaplane."
+  },
+  {
+    "objectID": "projects/phd/index.html",
+    "href": "projects/phd/index.html",
+    "title": "PhD Research: Hydrogen and Methane Aircraft Safety",
+    "section": "",
+    "text": "Sustainably reducing aviation’s climate impact points toward alternative energy systems, with liquid hydrogen (H\\(_2\\)) and methane (CH\\(_4\\)) emerging as prime candidates for long-haul flight. However, these fuels differ substantially from Jet A in their leak and ignition behavior, requiring systemic safety considerations from the earliest design phases.\nThis research bridges three previously independent domains: certification frameworks, hazard physics, and aircraft performance. By coupling jet/flame consequence solvers (like HyRAM+) with multidisciplinary design optimization (MDO), we evaluate how passive leak-mitigation requirements impact transport efficiency across different fuel types and tank architectures."
+  },
+  {
+    "objectID": "projects/phd/index.html#overview",
+    "href": "projects/phd/index.html#overview",
+    "title": "PhD Research: Hydrogen and Methane Aircraft Safety",
+    "section": "",
+    "text": "Sustainably reducing aviation’s climate impact points toward alternative energy systems, with liquid hydrogen (H\\(_2\\)) and methane (CH\\(_4\\)) emerging as prime candidates for long-haul flight. However, these fuels differ substantially from Jet A in their leak and ignition behavior, requiring systemic safety considerations from the earliest design phases.\nThis research bridges three previously independent domains: certification frameworks, hazard physics, and aircraft performance. By coupling jet/flame consequence solvers (like HyRAM+) with multidisciplinary design optimization (MDO), we evaluate how passive leak-mitigation requirements impact transport efficiency across different fuel types and tank architectures."
   },
   {
     "objectID": "projects/phd/index.html#key-contributions-technical-highlights",
     "href": "projects/phd/index.html#key-contributions-technical-highlights",
-    "title": "PhD Research: Integrating Safety Constraints Into Early-Stage Design of Hydrogen and Methane Aircraft",
+    "title": "PhD Research: Hydrogen and Methane Aircraft Safety",
     "section": "Key Contributions & Technical Highlights",
-    "text": "Key Contributions & Technical Highlights\n\nPlaceholder: placeholder"
+    "text": "Key Contributions & Technical Highlights\n\nDesignated Leak Zone (DLZ) Framework: Proposed formal classification of Designated Leak Zones (DLZs) for H\\(_2\\)- and CH\\(_4\\)-fueled aircraft—mirroring 14 CFR § 25.1181 for Jet A fire zones—to systematically handle unique alternative-fuel vapor and ignition risks.\nPhysics-Based Consequence Modeling: Utilized leak-consequence physics models to map out required ventilation mass flow rates and spatial separations needed to passively mitigate potential jet fires, explosions, and cryogenic-related damage.\nMultidisciplinary Design Optimization (MDO) Integration: Developed an aircraft design procedure that optimizes vehicle configurations subject to leak safety constraints, allowing evaluation of transport energy as a function of fuel, tank layout, and mitigated leak rate (dubbed passive-threshold leak rate–PTLR).\nPerformance Impact Quantification: Demonstrated that flame-driven spatial separation requirements (especially for wing geometries) dominate system-level penalties over ventilation requirements, with CH\\(_4\\) producing higher penalties due to larger spatial offsets."
   },
   {
-    "objectID": "projects/phd/index.html#media-gallery",
-    "href": "projects/phd/index.html#media-gallery",
-    "title": "PhD Research: Integrating Safety Constraints Into Early-Stage Design of Hydrogen and Methane Aircraft",
-    "section": "Media & Gallery",
-    "text": "Media & Gallery\n\nL3 Rocket Certification Flight:\n\n\n\n\n\n\nFigure 1: L3 flight"
+    "objectID": "projects/phd/index.html#results-findings",
+    "href": "projects/phd/index.html#results-findings",
+    "title": "PhD Research: Hydrogen and Methane Aircraft Safety",
+    "section": "Results & Findings",
+    "text": "Results & Findings\n\nLeak Behavior & Hazard Zones\nUnlike Jet A—which forms slowly evaporating fuel pools with small ignitable regions—leaked H\\(_2\\) and CH\\(_4\\) vaporize quickly, mix readily with ambient air, generate larger ignitable regions, and feature lower ignition energies. Consequently, fuel tank spaces must maintain positive-pressure designs to prevent ignitable boil-off/air mixtures.\n\n\n\n\n\n\nFigure 1: Qualitative comparison of leak and fire safety behavior for Jet A versus H\\(_2\\) and CH\\(_4\\).\n\n\n\n\n\n\n\n\n\nFigure 2: Hazard zones for forward-aft fuel tank configuration.\n\n\n\n\n\n\n\n\n\nFigure 3: Hazard zones for ventral fuel tank configuration.\n\n\n\n\n\nModel-Optimized H\\(\\bf{_2}\\) and CH\\(\\bf{_4}\\) Aircraft at Increasing PTLRs\n\n\n\n\n\n\nFigure 4: Forward-aft tank configuration.\n\n\n\n\n\n\n\n\n\nFigure 5: Ventral tank configuration.\n\n\n\n\n\nTransport Energy Penalties\nEvaluating a 7500 nmi long-haul mission (400 pax, 2-class seating, 20 t cargo, 64.8 m wingspan gate constraint), model-optimized aircraft show passenger specific transport energy penalties (MJ pax\\(^{-1}\\) km\\(^{-1}\\)) as the maximum passive-mitigation leak rate (PTLR) increases.\n\n\n\n\n\n\nFigure 6: Passenger-specific transport energy versus PTLR across forward-aft and ventral tank configurations.\n\n\n\n\n\n\n\n\n\n\n\n\n\nPTLR [mg/s]\nFwd-Aft H\\(_2\\)\nFwd-Aft CH\\(_4\\)\nVentral H\\(_2\\)\nVentral CH\\(_4\\)\n\n\n\n\n10\n1.8%\n4.7%\n2.0%\n3.0%\n\n\n20\n3.1%\n11.2%\n8.0%\n9.3%"
   },
   {
     "objectID": "projects/index.html",
     "href": "projects/index.html",
-    "title": "Projects & Case Studies",
+    "title": "Portfolio",
     "section": "",
-    "text": "Welcome to my engineering portfolio. Here you will find detailed case studies highlighting my work in aircraft design, alternative-fuel safety systems, UAV prototyping, and hardware testing.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPhD Research: Integrating Safety Constraints Into Early-Stage Design of Hydrogen and Methane Aircraft\n\n\n\nHardware Prototyping\n\n\n\n\n\n\n\n\n\n\nAug 13, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nFirefly: Small Deployable Micro-UAV\n\n\n\nUAV Design\n\nWind Tunnel Testing\n\nFlight Testing\n\nHardware Prototyping\n\n\n\nDesign and development of stability, control, and pull-spring-actuated folding-tail systems for a rocket-powered micro-UAV.\n\n\n\n\n\n\nMay 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolar-Electric Seaplane\n\n\n\nHardware Prototyping\n\n\n\nTA for undergraduate aircraft engineering capstone\n\n\n\n\n\n\nMay 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\nDesktop Lathe\n\n\n\nHardware Prototyping\n\n\n\n\n\n\n\n\n\n\nMay 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\nDawn: Solar High-Alitude Long Endurance Aircraft Propulsion\n\n\n\nHardware Prototyping\n\n\n\n\n\n\n\n\n\n\nMay 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nRocketry: Hobby and MIT Rocket Team\n\n\n\nHardware Prototyping\n\n\n\n\n\n\n\n\n\n\nAug 1, 2020\n\n\n\n\n\n\nNo matching items"
+    "text": "Welcome to my engineering portfolio. Here you will find highlights from my work in aircraft design, alternative-fuel safety systems, UAV prototyping, and hardware testing.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPhD Research: Hydrogen and Methane Aircraft Safety\n\n\n\nAircraft Design\n\nHydrogen Safety\n\nMultidisciplinary Design Optimization\n\nSystems Engineering\n\n\n\nQuantifying how hydrogen- and methane-specific leak-safety constraints affect long-haul aircraft performance and informing future certification frameworks.\n\n\n\n\n\n\nSep 17, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nFirefly: Deployable-Tail Micro-UAV\n\n\n\nUAV Design\n\nWind Tunnel Testing\n\nFlight Testing\n\nHardware Prototyping\n\n\n\nDesign and development of pull-spring-actuated folding-tail stability and control systems for a rocket-powered micro-UAV.\n\n\n\n\n\n\nJun 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolar-Electric Seaplane\n\n\n\nHardware Prototyping\n\nFlight Testing\n\n\n\nTA for undergraduate aircraft engineering capstone (MIT course 16.821).\n\n\n\n\n\n\nMay 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\nDesktop Lathe\n\n\n\nHardware Prototyping\n\n\n\nTeam project\n\n\n\n\n\n\nMay 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\nDawn: Solar High-Alitude Long Endurance Aircraft Propulsion\n\n\n\nHardware Prototyping\n\n\n\n\n\n\n\n\n\n\nMay 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nRocketry: Hobby and MIT Rocket Team\n\n\n\nHardware Prototyping\n\n\n\n\n\n\n\n\n\n\nAug 1, 2020\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/dawn/index.html#key-contributions-technical-highlights",
@@ -93,30 +121,30 @@
   {
     "objectID": "projects/firefly-uav/index.html",
     "href": "projects/firefly-uav/index.html",
-    "title": "Firefly: Small Deployable Micro-UAV",
+    "title": "Firefly: Deployable-Tail Micro-UAV",
     "section": "",
-    "text": "As part of my S.M. research at the MIT International Center for Air Transportation, I led the design and development of the stability and control system for Firefly—a deployable micro-UAV powered by a slow-burning solid rocket motor.\nThe primary engineering challenge involved engineering a reliable deployment mechanism that could transition seamlessly from a compact stowed rocket configuration to a stable flying wing/tail architecture under changing vehicle static margin.\n\n\n\n\n\n\nFigure 1: Firefly Design Mission"
+    "text": "As part of my S.M. research at the MIT International Center for Air Transportation, I led the design and development of the stability and control system for Firefly—a deployable micro-UAV powered by a slow-burning solid rocket motor.\nThe challenge involved engineering a reliable tail deployment mechanism that could transition seamlessly from a compact stowed configuration to a stable flying wing/tail architecture under changing vehicle static margin as the solid-rocket motor burned.\n\n\n\n\n\n\nFigure 1: Firefly Concept of Operations."
   },
   {
     "objectID": "projects/firefly-uav/index.html#overview",
     "href": "projects/firefly-uav/index.html#overview",
-    "title": "Firefly: Small Deployable Micro-UAV",
+    "title": "Firefly: Deployable-Tail Micro-UAV",
     "section": "",
-    "text": "As part of my S.M. research at the MIT International Center for Air Transportation, I led the design and development of the stability and control system for Firefly—a deployable micro-UAV powered by a slow-burning solid rocket motor.\nThe primary engineering challenge involved engineering a reliable deployment mechanism that could transition seamlessly from a compact stowed rocket configuration to a stable flying wing/tail architecture under changing vehicle static margin.\n\n\n\n\n\n\nFigure 1: Firefly Design Mission"
+    "text": "As part of my S.M. research at the MIT International Center for Air Transportation, I led the design and development of the stability and control system for Firefly—a deployable micro-UAV powered by a slow-burning solid rocket motor.\nThe challenge involved engineering a reliable tail deployment mechanism that could transition seamlessly from a compact stowed configuration to a stable flying wing/tail architecture under changing vehicle static margin as the solid-rocket motor burned.\n\n\n\n\n\n\nFigure 1: Firefly Concept of Operations."
   },
   {
     "objectID": "projects/firefly-uav/index.html#key-contributions-technical-highlights",
     "href": "projects/firefly-uav/index.html#key-contributions-technical-highlights",
-    "title": "Firefly: Small Deployable Micro-UAV",
+    "title": "Firefly: Deployable-Tail Micro-UAV",
     "section": "Key Contributions & Technical Highlights",
-    "text": "Key Contributions & Technical Highlights\n\nFolding-Tail Mechanism: Designed a pull-spring-actuated folding tail utilizing an oblique hinge that serves as both the physical deployment axis and the aerodynamic actuation axis.\nRapid Prototyping: Iterated rapidly through multiple 3D-printable vehicle iterations to test hinge mechanics, deployment reliability, and structural integrity.\nWind-Tunnel Testing: Built a custom pitch-balance test setup to experimentally evaluate longitudinal stability and controllability across various angles of attack.\nFlight Testing: Conducted unpowered drop tests deployed from a quadcopter platform to capture real-world flight dynamics data.\nValidation: Correlated experimental wind-tunnel and drop-test data against analytical predictions generated via AVL (Athena Vortex Lattice) vortex-lattice methods."
+    "text": "Key Contributions & Technical Highlights\n\nFolding-Tail Mechanism: Designed a pull-spring-actuated folding tail utilizing an oblique hinge that serves as both the physical deployment axis and the aerodynamic actuation axis.\nRapid Prototyping: Iterated rapidly through multiple 3D-printable vehicle iterations to test hinge mechanics, deployment reliability, and structural integrity.\nWind-Tunnel Testing: Built a custom pitch-balance test setup to experimentally evaluate longitudinal stability and controllability across various angles of attack.\nFlight Testing: Conducted unpowered drop tests deployed from a quadcopter to collect stability and controllability data under glide conditions.\nValidation: Correlated experimental wind-tunnel and drop-test data against analytical predictions generated via AVL (Athena Vortex Lattice)."
   },
   {
     "objectID": "projects/firefly-uav/index.html#media-gallery",
     "href": "projects/firefly-uav/index.html#media-gallery",
-    "title": "Firefly: Small Deployable Micro-UAV",
+    "title": "Firefly: Deployable-Tail Micro-UAV",
     "section": "Media & Gallery",
-    "text": "Media & Gallery\n(You can drop your photos, CAD renders, or video clips into this projects/firefly-uav/ folder and embed them here using standard Markdown syntax like ![Caption](image-name.jpg) or HTML video tags).\n\nSystem Overview:\n\n\n\n\n\n\nFigure 2: Firefly Micro-UAV Overview\n\n\n\n\n\nPrototyping & CAD:\n\n\n\n\n\n\nFigure 3: Pull-spring tail actuation for stability and control.\n\n\n\n\n\n\n\n\n\nFigure 4: As-built glide test vehicle before final integration\n\n\n\n\n\nWind Tunnel Setup:\n\n\n\n\n\n\nFigure 5: Designed custom pitch balance to measure lift, drag, and pitching moment simultaneously during wing-tunnel testing.\n\n\n\n\n\n\n\n\n\nFigure 6: Wind Tunnel Testing\n\n\n\n\n\n\n\n\n\nFigure 7: 3D-printed fin angle protractor enabled measurement of pitching moment vs. fin deflection angle curve (\\(C_{m_{coll}}\\)).\n\n\n\n\n\nFlight Drop Test:\n\n\n\n\n\n\nFigure 8: As-built glide test vehicle at glide test field\n\n\n\n\n\n\nYour browser does not support the video tag."
+    "text": "Media & Gallery\n\nSystem Overview\n\n\n\n\n\n\nFigure 2: Firefly Micro-UAV Parts and Systems Overview.\n\n\n\n\n\nPrototyping & CAD\n\n\n\n\n\n\nFigure 3: Pull-spring tail actuation for stability and control.\n\n\n\n\n\n\n\n\n\nFigure 4: As-built glide test vehicle before final integration.\n\n\n\n\n\nWind Tunnel Setup\n\n\n\n\n\n\nFigure 5: Designed custom pitch balance to measure lift, drag, and pitching moment simultaneously during wing-tunnel testing. Internal sting attachment allows vehicle mounting at 2 degree angle of attack increments.\n\n\n\n\n\n\n\n\n\nFigure 6: As-built sting and wind tunnel test vehicle.\n\n\n\n\n\n\n\n\n\nFigure 7: 3D-printed fin angle protractor enabled measurement of pitching moment vs. fin deflection angle curve (\\(C_{m_{coll}}\\)).\n\n\n\n\n\nGlide Testing\n\n\n\n\n\n\nFigure 8: As-built glide test vehicle at test field.\n\n\n\nTowing to drop altitude:\n\n\n\nYour browser does not support the video tag. \n\nDrop from quadcopter view:\n\n\n\nYour browser does not support the video tag. \n\nFirst person view of glide test:\n\n\n\nYour browser does not support the video tag."
   },
   {
     "objectID": "projects/lathe/index.html#key-contributions-technical-highlights",
