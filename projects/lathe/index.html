@@ -106,8 +106,9 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html"> 
-<span class="menu-text">About</span></a>
+    <span class="nav-link">
+<span class="menu-text">about.qmd</span>
+    </span>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -127,10 +128,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#key-contributions-technical-highlights" id="toc-key-contributions-technical-highlights" class="nav-link" data-scroll-target="#key-contributions-technical-highlights">Key Contributions &amp; Technical Highlights</a></li>
-  <li><a href="#media-gallery" id="toc-media-gallery" class="nav-link" data-scroll-target="#media-gallery">Media &amp; Gallery</a>
-  <ul class="collapse">
-  <li><a href="#l3-rocket-certification-flight" id="toc-l3-rocket-certification-flight" class="nav-link" data-scroll-target="#l3-rocket-certification-flight"><strong>L3 Rocket Certification Flight:</strong></a></li>
-  </ul></li>
+  <li><a href="#media-gallery" id="toc-media-gallery" class="nav-link" data-scroll-target="#media-gallery">Media &amp; Gallery</a></li>
   </ul>
 </nav>
     </div>
@@ -172,40 +170,93 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>This team hardware prototyping project, as part of MIT course 2.720, focused on the design, fabrication, and requirements verification of a custom desktop lathe. The initiative combined precision mechanical design with rapid prototyping methods to build a functional, benchtop-scale machining tool capable of turning stainless steel.</p>
 </section>
 <section id="key-contributions-technical-highlights" class="level2">
 <h2 class="anchored" data-anchor-id="key-contributions-technical-highlights">Key Contributions &amp; Technical Highlights</h2>
 <ul>
-<li><strong>Placeholder:</strong> some stuff</li>
+<li><strong>Precision Manufacturing:</strong> Machined final aluminum drive components and integrated the motor-to-spindle power transmission system.</li>
+<li><strong>Part &amp; System Functional Requirements Verification:</strong> Post-manufacturing verification, using tools including a Coordinate Measuring Machine (CMM), was conducted to verify parts met specified tolerances and stiffness requirements.<br>
+</li>
+<li><strong>Iterative Prototyping &amp; Pulley Optimization:</strong> Designed and tested multiple crowned pulley geometries using rapid 3D-printing to evaluate belt tracking and stability before committing to final material fabrication.</li>
+<li><strong>Functional Validation:</strong> Performed rigorous cut testing, successfully demonstrating the lathe’s capability to cleanly turn stainless steel stock.</li>
 </ul>
+<hr>
 </section>
 <section id="media-gallery" class="level2">
 <h2 class="anchored" data-anchor-id="media-gallery">Media &amp; Gallery</h2>
-<section id="l3-rocket-certification-flight" class="level3">
-<h3 class="anchored" data-anchor-id="l3-rocket-certification-flight"><strong>L3 Rocket Certification Flight:</strong></h3>
 <div id="fig-lathe-2" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-lathe-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="Flight1_02405.JPG" class="img-fluid figure-img" style="width:70.0%">
+<img src="lathe_2.jpg" class="img-fluid figure-img" style="width:70.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lathe-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: L3 flight
+Figure&nbsp;1: Final assembly of the desktop lathe.
+</figcaption>
+</figure>
+</div>
+<div id="fig-lathe-expanding_mandrel" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-lathe-expanding_mandrel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="expanding_mandrel.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lathe-expanding_mandrel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Made custom expanding mandrel to hold spindle housing internally in order to machine bearing-mounting holes with aligned axes.
+</figcaption>
+</figure>
+</div>
+<div id="fig-lathe-expanding_mandrel2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-lathe-expanding_mandrel2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="expanding_mandrel_in_use.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lathe-expanding_mandrel2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Expanding mandrel in use.
+</figcaption>
+</figure>
+</div>
+<div id="fig-lathe-spindle_runout" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-lathe-spindle_runout-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="spindle_runout.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lathe-spindle_runout-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Spindle runout verification after spindle assembly.
+</figcaption>
+</figure>
+</div>
+<div id="fig-lathe-pulleys" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-lathe-pulleys-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="crowned_pulley_belt.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lathe-pulleys-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: Motor drives spindle via crowned pulleys and belt. Pulley geometry was set after testing several radii using quickly 3D-printed pulleys and checking for belt stability. After the most stable geometry was determined, final aluminum gears were machined.
+</figcaption>
+</figure>
+</div>
+<div id="fig-lathe-CMM" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-lathe-CMM-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="CMM.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lathe-CMM-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: Crossfeed flexure verification using Coordinate Measuring Machine.
 </figcaption>
 </figure>
 </div>
 <div id="fig-lathe-3" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-lathe-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="Flight1_02407.JPG" class="img-fluid figure-img" style="width:70.0%">
+<img src="cut_part.png" class="img-fluid figure-img" style="width:70.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lathe-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: Recovery
+Figure&nbsp;7: Stainless steel rod turned by the lathe during testing.
 </figcaption>
 </figure>
 </div>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

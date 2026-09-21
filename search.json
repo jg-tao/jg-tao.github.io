@@ -25,7 +25,7 @@
     "href": "projects/seaplane/index.html#media-gallery",
     "title": "Solar-Electric Seaplane",
     "section": "Media & Gallery",
-    "text": "Media & Gallery\n\n\n\n\n\n\nFigure 1: Pre-flight.\n\n\n\n\n\n\n\n\n\nFigure 2: Initial takeoff run during flight testing.\n\n\n\n\n\n\n\n\n\nFigure 3: Airborne phase of the solar-electric seaplane."
+    "text": "Media & Gallery\n\n\n\n\n\n\nFigure 1: Pre-flight.\n\n\n\n\n\n\n\n\n\nFigure 2: Initial takeoff during flight testing.\n\n\n\n\n\n\n\n\n\nFigure 3: Initial takeoff during flight testing.\n\n\n\n\n\n\n\n\n\nFigure 4: Airborne phase of the solar-electric seaplane."
   },
   {
     "objectID": "projects/phd/index.html",
@@ -75,13 +75,6 @@
     "title": "Dawn: Solar High-Alitude Long Endurance Aircraft Propulsion",
     "section": "Media & Gallery",
     "text": "Media & Gallery\n\nL3 Rocket Certification Flight:\n\n\n\n\n\n\nFigure 1: L3 flight\n\n\n\n\n\n\n\n\n\nFigure 2: Recovery"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
   },
   {
     "objectID": "index.html",
@@ -147,18 +140,32 @@
     "text": "Media & Gallery\n\nSystem Overview\n\n\n\n\n\n\nFigure 2: Firefly Micro-UAV Parts and Systems Overview.\n\n\n\n\n\nPrototyping & CAD\n\n\n\n\n\n\nFigure 3: Pull-spring tail actuation for stability and control.\n\n\n\n\n\n\n\n\n\nFigure 4: As-built glide test vehicle before final integration.\n\n\n\n\n\nWind Tunnel Setup\n\n\n\n\n\n\nFigure 5: Designed custom pitch balance to measure lift, drag, and pitching moment simultaneously during wing-tunnel testing. Internal sting attachment allows vehicle mounting at 2 degree angle of attack increments.\n\n\n\n\n\n\n\n\n\nFigure 6: As-built sting and wind tunnel test vehicle.\n\n\n\n\n\n\n\n\n\nFigure 7: 3D-printed fin angle protractor enabled measurement of pitching moment vs. fin deflection angle curve (\\(C_{m_{coll}}\\)).\n\n\n\n\n\nGlide Testing\n\n\n\n\n\n\nFigure 8: As-built glide test vehicle at test field.\n\n\n\nTowing to drop altitude:\n\n\n\nYour browser does not support the video tag. \n\nDrop from quadcopter view:\n\n\n\nYour browser does not support the video tag. \n\nFirst person view of glide test:\n\n\n\nYour browser does not support the video tag."
   },
   {
+    "objectID": "projects/lathe/index.html",
+    "href": "projects/lathe/index.html",
+    "title": "Desktop Lathe",
+    "section": "",
+    "text": "This team hardware prototyping project, as part of MIT course 2.720, focused on the design, fabrication, and requirements verification of a custom desktop lathe. The initiative combined precision mechanical design with rapid prototyping methods to build a functional, benchtop-scale machining tool capable of turning stainless steel."
+  },
+  {
+    "objectID": "projects/lathe/index.html#overview",
+    "href": "projects/lathe/index.html#overview",
+    "title": "Desktop Lathe",
+    "section": "",
+    "text": "This team hardware prototyping project, as part of MIT course 2.720, focused on the design, fabrication, and requirements verification of a custom desktop lathe. The initiative combined precision mechanical design with rapid prototyping methods to build a functional, benchtop-scale machining tool capable of turning stainless steel."
+  },
+  {
     "objectID": "projects/lathe/index.html#key-contributions-technical-highlights",
     "href": "projects/lathe/index.html#key-contributions-technical-highlights",
     "title": "Desktop Lathe",
     "section": "Key Contributions & Technical Highlights",
-    "text": "Key Contributions & Technical Highlights\n\nPlaceholder: some stuff"
+    "text": "Key Contributions & Technical Highlights\n\nPrecision Manufacturing: Machined final aluminum drive components and integrated the motor-to-spindle power transmission system.\nPart & System Functional Requirements Verification: Post-manufacturing verification, using tools including a Coordinate Measuring Machine (CMM), was conducted to verify parts met specified tolerances and stiffness requirements.\n\nIterative Prototyping & Pulley Optimization: Designed and tested multiple crowned pulley geometries using rapid 3D-printing to evaluate belt tracking and stability before committing to final material fabrication.\nFunctional Validation: Performed rigorous cut testing, successfully demonstrating the lathe’s capability to cleanly turn stainless steel stock."
   },
   {
     "objectID": "projects/lathe/index.html#media-gallery",
     "href": "projects/lathe/index.html#media-gallery",
     "title": "Desktop Lathe",
     "section": "Media & Gallery",
-    "text": "Media & Gallery\n\nL3 Rocket Certification Flight:\n\n\n\n\n\n\nFigure 1: L3 flight\n\n\n\n\n\n\n\n\n\nFigure 2: Recovery"
+    "text": "Media & Gallery\n\n\n\n\n\n\nFigure 1: Final assembly of the desktop lathe.\n\n\n\n\n\n\n\n\n\nFigure 2: Made custom expanding mandrel to hold spindle housing internally in order to machine bearing-mounting holes with aligned axes.\n\n\n\n\n\n\n\n\n\nFigure 3: Expanding mandrel in use.\n\n\n\n\n\n\n\n\n\nFigure 4: Spindle runout verification after spindle assembly.\n\n\n\n\n\n\n\n\n\nFigure 5: Motor drives spindle via crowned pulleys and belt. Pulley geometry was set after testing several radii using quickly 3D-printed pulleys and checking for belt stability. After the most stable geometry was determined, final aluminum gears were machined.\n\n\n\n\n\n\n\n\n\nFigure 6: Crossfeed flexure verification using Coordinate Measuring Machine.\n\n\n\n\n\n\n\n\n\nFigure 7: Stainless steel rod turned by the lathe during testing."
   },
   {
     "objectID": "projects/rocketry/index.html#key-contributions-technical-highlights",
