@@ -60,42 +60,56 @@
     "href": "projects/index.html",
     "title": "Portfolio",
     "section": "",
-    "text": "Welcome to my engineering portfolio. Here you will find highlights from my work in aircraft design, alternative-fuel safety systems, UAV prototyping, and hardware testing.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPhD Research: Hydrogen and Methane Aircraft Safety\n\n\n\nAircraft Design\n\nHydrogen Safety\n\nMultidisciplinary Design Optimization\n\nSystems Engineering\n\n\n\nQuantifying how hydrogen- and methane-specific leak-safety constraints affect long-haul aircraft performance and informing future certification frameworks.\n\n\n\n\n\n\nSep 17, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nFirefly: Deployable-Tail Micro-UAV\n\n\n\nUAV Design\n\nWind Tunnel Testing\n\nFlight Testing\n\nHardware Prototyping\n\n\n\nDesign and development of pull-spring-actuated folding-tail stability and control systems for a rocket-powered micro-UAV.\n\n\n\n\n\n\nJun 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolar-Electric Seaplane\n\n\n\nHardware Prototyping\n\nFlight Testing\n\n\n\nTA for undergraduate aircraft engineering capstone (MIT course 16.821).\n\n\n\n\n\n\nMay 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\nDesktop Lathe\n\n\n\nHardware Prototyping\n\n\n\nTeam project\n\n\n\n\n\n\nMay 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\nDawn: Solar High-Alitude Long Endurance Aircraft Propulsion\n\n\n\nHardware Prototyping\n\n\n\n\n\n\n\n\n\n\nMay 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nRocketry: Hobby and MIT Rocket Team\n\n\n\nHardware Prototyping\n\n\n\n\n\n\n\n\n\n\nAug 1, 2020\n\n\n\n\n\n\nNo matching items"
+    "text": "Welcome to my engineering portfolio. Here you will find highlights from my work in aircraft design, alternative-fuel safety systems, UAV prototyping, and hardware testing.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPhD Research: Hydrogen and Methane Aircraft Safety\n\n\n\nAircraft Design\n\nHydrogen Safety\n\nMultidisciplinary Design Optimization\n\nSystems Engineering\n\n\n\nQuantifying how hydrogen- and methane-specific leak-safety constraints affect long-haul aircraft performance and informing future certification frameworks.\n\n\n\n\n\n\nSep 17, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nFirefly: Deployable-Tail Micro-UAV\n\n\n\nUAV Design\n\nWind Tunnel Testing\n\nFlight Testing\n\nHardware Prototyping\n\n\n\nDesign and development of pull-spring-actuated folding-tail stability and control systems for a rocket-powered micro-UAV.\n\n\n\n\n\n\nJun 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolar-Electric Seaplane\n\n\n\nHardware Prototyping\n\nFlight Testing\n\n\n\nTA for undergraduate aircraft engineering capstone (MIT course 16.821).\n\n\n\n\n\n\nMay 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\nDesktop Lathe\n\n\n\nHardware Prototyping\n\n\n\nTeam project, MIT course 2.720\n\n\n\n\n\n\nMay 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\nDawn: Solar High-Alitude Long Endurance Aircraft\n\n\n\nHardware Prototyping\n\nAircraft Design\n\nMultidisciplinary Design Optimization\n\n\n\nAerospace capstone (MIT courses 16.82/821): Propulsion system configuration and carbon-fiber propeller manufacturing prototyping\n\n\n\n\n\n\nMay 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nRocketry: MIT Rocket Team and Tripoli Certification Flights\n\n\n\nHardware Prototyping\n\n\n\n\n\n\n\n\n\n\nAug 1, 2020\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/dawn/index.html",
+    "href": "projects/dawn/index.html",
+    "title": "Dawn: Solar High-Alitude Long Endurance Aircraft",
+    "section": "",
+    "text": "Completed as part of the MIT aerospace capstone (courses 16.82/821), the Dawn project focused on the design and prototyping of a solar-powered, high-altitude long-endurance (HALE) aircraft designed for ozone monitoring. This multi-semester effort combined system-level propulsion modeling with hands-on composite manufacturing and structural testing to develop lightweight, high-performance components."
+  },
+  {
+    "objectID": "projects/dawn/index.html#overview",
+    "href": "projects/dawn/index.html#overview",
+    "title": "Dawn: Solar High-Alitude Long Endurance Aircraft",
+    "section": "",
+    "text": "Completed as part of the MIT aerospace capstone (courses 16.82/821), the Dawn project focused on the design and prototyping of a solar-powered, high-altitude long-endurance (HALE) aircraft designed for ozone monitoring. This multi-semester effort combined system-level propulsion modeling with hands-on composite manufacturing and structural testing to develop lightweight, high-performance components."
   },
   {
     "objectID": "projects/dawn/index.html#key-contributions-technical-highlights",
     "href": "projects/dawn/index.html#key-contributions-technical-highlights",
-    "title": "Dawn: Solar High-Alitude Long Endurance Aircraft Propulsion",
+    "title": "Dawn: Solar High-Alitude Long Endurance Aircraft",
     "section": "Key Contributions & Technical Highlights",
-    "text": "Key Contributions & Technical Highlights\n\nPlaceholder: some stuff"
+    "text": "Key Contributions & Technical Highlights\n\nPropulsion System Configuration: Configured the propulsion system for “Dawn 1,” an ozone-monitoring high-altitude, long-endurance aircraft, and developed custom MATLAB tools to design and analyze propulsion configurations. Used qprop and qmil tools for propeller design and performance modeling.\nPropeller Manufacturing Prototyping: Fabricated custom composite propeller section layups to evaluate torsional stiffness performance, mass, and overall manufacturability."
   },
   {
     "objectID": "projects/dawn/index.html#media-gallery",
     "href": "projects/dawn/index.html#media-gallery",
-    "title": "Dawn: Solar High-Alitude Long Endurance Aircraft Propulsion",
+    "title": "Dawn: Solar High-Alitude Long Endurance Aircraft",
     "section": "Media & Gallery",
-    "text": "Media & Gallery\n\nL3 Rocket Certification Flight:\n\n\n\n\n\n\nFigure 1: L3 flight\n\n\n\n\n\n\n\n\n\nFigure 2: Recovery"
+    "text": "Media & Gallery\n\n\n\n\n\n\nFigure 1: Composite sandwiches manufactured to inform fabric type and weight selection for propeller.\n\n\n\n\n\n\n\n\n\nFigure 2: 3-point bending test of sandwich cooupon.\n\n\n\n\n\n\n\n\n\nFigure 3: Propeller manufacturing.\n\n\n\n\n\n\n\n\n\nFigure 4: Preparing to join upper and lower surfaces.\n\n\n\n\n\n\n\n\n\nFigure 5: Final clamping.\n\n\n\n\n\n\n\n\n\nFigure 6: Cross-section view of propeller section.\n\n\n\n\n\n\n\n\n\nFigure 7: Propeller test section.\n\n\n\n\n\n\n\n\n\nFigure 8: Torsion test sketch.\n\n\n\n\n\n\n\n\n\nFigure 9: Propeller section during torsion test."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Julia Tao",
     "section": "",
-    "text": "I am an aerospace engineer and MIT Ph.D. specializing in aircraft design, alternative-fuel safety architectures, and flight vehicle testing. My work bridges multi-physics analytical modeling with hands-on hardware prototyping, manufacturing, and testing.\nBased in the Greater Boston area (Medford, MA), I am seeking full-time roles focused on aerospace R&D, systems engineering, and design/test engineering, especially those with a strong hands-on or physical hardware component.\n\n\n\n\nAircraft Design & Systems: Multidisciplinary optimization, alternative-fuel systems (hydrogen/methane), requirements definition, and safety frameworks.\nTesting & Fabrication: UAV flight testing, wind-tunnel experimentation, machining (lathe, mill, waterjet), composite layups, and 3D printing.\nSimulation & Software: Python, MATLAB, SolidWorks, AVL, XFOIL, and custom aerodynamic/thermal modeling tools.\n\n\n\n\n\nPh.D. in Aircraft Systems Engineering | Massachusetts Institute of Technology (September 17, 2026)\nM.S. in Aerospace Engineering | Massachusetts Institute of Technology (June 1, 2023)\nB.S. in Aerospace Engineering (Minor in Mathematics) | Massachusetts Institute of Technology (June 4, 2021)"
+    "text": "I am an aerospace engineer and MIT Ph.D. specializing in aircraft design, alternative-fuel safety architectures, and flight vehicle testing. My work bridges analytical modeling with hands-on hardware prototyping, manufacturing, and testing.\nBased in the Greater Boston area (Medford, MA), I am seeking full-time roles focused on aerospace R&D, systems engineering, and design/test engineering, especially those with a strong hands-on or physical hardware component.\n\n\n\n\nAircraft Design & Systems: Multidisciplinary design optimization, alternative-fuel systems (hydrogen/methane), and safety frameworks.\nTesting & Fabrication: UAV flight testing, wind-tunnel experimentation, machining (lathe, mill, waterjet), composite layups, and 3D printing (FDM, SLA).\nSimulation & Software: Python, MATLAB, SolidWorks, AVL, XFOIL, and custom aerodynamic/thermal modeling tools.\n\n\n\n\n\nPh.D. in Aircraft Systems Engineering | Massachusetts Institute of Technology (September 17, 2026)\nM.S. in Aerospace Engineering | Massachusetts Institute of Technology (June 1, 2023)\nB.S. in Aerospace Engineering (Minor in Mathematics) | Massachusetts Institute of Technology (June 4, 2021)"
   },
   {
     "objectID": "index.html#welcome",
     "href": "index.html#welcome",
     "title": "Julia Tao",
     "section": "",
-    "text": "I am an aerospace engineer and MIT Ph.D. specializing in aircraft design, alternative-fuel safety architectures, and flight vehicle testing. My work bridges multi-physics analytical modeling with hands-on hardware prototyping, manufacturing, and testing.\nBased in the Greater Boston area (Medford, MA), I am seeking full-time roles focused on aerospace R&D, systems engineering, and design/test engineering, especially those with a strong hands-on or physical hardware component."
+    "text": "I am an aerospace engineer and MIT Ph.D. specializing in aircraft design, alternative-fuel safety architectures, and flight vehicle testing. My work bridges analytical modeling with hands-on hardware prototyping, manufacturing, and testing.\nBased in the Greater Boston area (Medford, MA), I am seeking full-time roles focused on aerospace R&D, systems engineering, and design/test engineering, especially those with a strong hands-on or physical hardware component."
   },
   {
     "objectID": "index.html#expertise-core-competencies",
     "href": "index.html#expertise-core-competencies",
     "title": "Julia Tao",
     "section": "",
-    "text": "Aircraft Design & Systems: Multidisciplinary optimization, alternative-fuel systems (hydrogen/methane), requirements definition, and safety frameworks.\nTesting & Fabrication: UAV flight testing, wind-tunnel experimentation, machining (lathe, mill, waterjet), composite layups, and 3D printing.\nSimulation & Software: Python, MATLAB, SolidWorks, AVL, XFOIL, and custom aerodynamic/thermal modeling tools."
+    "text": "Aircraft Design & Systems: Multidisciplinary design optimization, alternative-fuel systems (hydrogen/methane), and safety frameworks.\nTesting & Fabrication: UAV flight testing, wind-tunnel experimentation, machining (lathe, mill, waterjet), composite layups, and 3D printing (FDM, SLA).\nSimulation & Software: Python, MATLAB, SolidWorks, AVL, XFOIL, and custom aerodynamic/thermal modeling tools."
   },
   {
     "objectID": "index.html#education",
@@ -158,7 +172,7 @@
     "href": "projects/lathe/index.html#key-contributions-technical-highlights",
     "title": "Desktop Lathe",
     "section": "Key Contributions & Technical Highlights",
-    "text": "Key Contributions & Technical Highlights\n\nPrecision Manufacturing: Machined final aluminum drive components and integrated the motor-to-spindle power transmission system.\nPart & System Functional Requirements Verification: Post-manufacturing verification, using tools including a Coordinate Measuring Machine (CMM), was conducted to verify parts met specified tolerances and stiffness requirements.\n\nIterative Prototyping & Pulley Optimization: Designed and tested multiple crowned pulley geometries using rapid 3D-printing to evaluate belt tracking and stability before committing to final material fabrication.\nFunctional Validation: Performed rigorous cut testing, successfully demonstrating the lathe’s capability to cleanly turn stainless steel stock."
+    "text": "Key Contributions & Technical Highlights\n\nPrecision Manufacturing: Designed and machined aluminum and stainless steel spindle components and integrated the motor-to-spindle power transmission system.\nPart & System Functional Requirements Verification: Post-manufacturing verification, using tools including a Coordinate Measuring Machine (CMM), was conducted to verify parts met specified tolerances and stiffness requirements.\n\nIterative Prototyping & Pulley Optimization: Designed and tested multiple crowned pulley geometries using 3D-printing to rapidly evaluate belt tracking and stability before committing geometry for final fabrication.\nFunctional Validation: Performed cut testing, successfully demonstrating the lathe’s capability to cleanly turn stainless steel stock."
   },
   {
     "objectID": "projects/lathe/index.html#media-gallery",
@@ -170,15 +184,15 @@
   {
     "objectID": "projects/rocketry/index.html#key-contributions-technical-highlights",
     "href": "projects/rocketry/index.html#key-contributions-technical-highlights",
-    "title": "Rocketry: Hobby and MIT Rocket Team",
+    "title": "Rocketry: MIT Rocket Team and Tripoli Certification Flights",
     "section": "Key Contributions & Technical Highlights",
-    "text": "Key Contributions & Technical Highlights\n\nPlaceholder: placeholder"
+    "text": "Key Contributions & Technical Highlights\n\nPresident & Propulsion Lead, MIT Rocket Team: Served as President of MIT Rocket Team, leading approximately 80 students in development of a P-class rocket. Coordinated design reviews, served as liaison to MIT administration and industry partners, and obtained FAA waivers for flights up to 80,000 ft. Served as Propulsion Lead from Jan. 2020–July 2020.\nHobby Rocketry L3 Certification: Designed, scratch-built, launched, and recovered an M-class solid-motor rocket, earning Tripoli Level 3 certification; vehicle reached over 14,000 ft and 950 mph."
   },
   {
     "objectID": "projects/rocketry/index.html#media-gallery",
     "href": "projects/rocketry/index.html#media-gallery",
-    "title": "Rocketry: Hobby and MIT Rocket Team",
+    "title": "Rocketry: MIT Rocket Team and Tripoli Certification Flights",
     "section": "Media & Gallery",
-    "text": "Media & Gallery\n\nL3 Rocket Certification Flight:\n\n\n\n\n\n\nFigure 1: L3 flight"
+    "text": "Media & Gallery\n\nL3 Rocket Certification Flight:\n\n\n\n\n\n\nFigure 1: L3 shortly after launch.\n\n\n\n\n\n\n\n\n\nFigure 2: L3 flight.\n\n\n\n\n\n\n\n\n\nFigure 3: L3 rocket recovery. Drogue and main chutes deployed smoothly and all components recovered."
   }
 ]
