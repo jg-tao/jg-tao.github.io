@@ -152,6 +152,7 @@ window.Quarto = {
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#key-contributions-technical-highlights" id="toc-key-contributions-technical-highlights" class="nav-link" data-scroll-target="#key-contributions-technical-highlights">Key Contributions &amp; Technical Highlights</a></li>
+  <li><a href="#publications" id="toc-publications" class="nav-link" data-scroll-target="#publications">Publications</a></li>
   <li><a href="#results-findings" id="toc-results-findings" class="nav-link" data-scroll-target="#results-findings">Results &amp; Findings</a>
   <ul class="collapse">
   <li><a href="#leak-behavior-hazard-zones" id="toc-leak-behavior-hazard-zones" class="nav-link" data-scroll-target="#leak-behavior-hazard-zones"><strong>Leak Behavior &amp; Hazard Zones</strong></a></li>
@@ -203,7 +204,7 @@ window.Quarto = {
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>Sustainably reducing aviation’s climate impact points toward alternative energy systems, with liquid hydrogen (H<span class="math inline">\(_2\)</span>) and methane (CH<span class="math inline">\(_4\)</span>) emerging as prime candidates for long-haul flight. However, these fuels differ substantially from Jet A in their leak and ignition behavior, requiring systemic safety considerations from the earliest design phases.</p>
-<p>This research bridges three previously independent domains: <strong>certification frameworks</strong>, <strong>hazard physics</strong>, and <strong>aircraft performance</strong>. By coupling jet/flame consequence solvers (like HyRAM+) with multidisciplinary design optimization (MDO), we evaluate how passive leak-mitigation requirements impact transport efficiency across different fuel types and tank architectures.</p>
+<p>This research bridges three key domains: <strong>certification frameworks</strong>, <strong>hazard physics</strong>, and <strong>aircraft performance</strong>. By coupling jet/flame consequence solvers (like HyRAM+) with multidisciplinary design optimization (MDO), we evaluate how passive leak-mitigation requirements impact transport efficiency across different fuel types and tank architectures.</p>
 </section>
 <section id="key-contributions-technical-highlights" class="level2">
 <h2 class="anchored" data-anchor-id="key-contributions-technical-highlights">Key Contributions &amp; Technical Highlights</h2>
@@ -211,7 +212,15 @@ window.Quarto = {
 <li><p><strong>Designated Leak Zone (DLZ) Framework:</strong> Proposed formal classification of Designated Leak Zones (DLZs) for H<span class="math inline">\(_2\)</span>- and CH<span class="math inline">\(_4\)</span>-fueled aircraft—mirroring 14 CFR § 25.1181 for Jet A fire zones—to systematically handle unique alternative-fuel vapor and ignition risks.</p></li>
 <li><p><strong>Physics-Based Consequence Modeling:</strong> Utilized leak-consequence physics models to map out required ventilation mass flow rates and spatial separations needed to passively mitigate potential jet fires, explosions, and cryogenic-related damage.</p></li>
 <li><p><strong>Multidisciplinary Design Optimization (MDO) Integration:</strong> Developed an aircraft design procedure that optimizes vehicle configurations subject to leak safety constraints, allowing evaluation of transport energy as a function of fuel, tank layout, and mitigated leak rate (dubbed passive-threshold leak rate–PTLR).</p></li>
-<li><p><strong>Performance Impact Quantification:</strong> Demonstrated that flame-driven spatial separation requirements (especially for wing geometries) dominate system-level penalties over ventilation requirements, with CH<span class="math inline">\(_4\)</span> producing higher penalties due to larger spatial offsets.</p></li>
+<li><p><strong>Performance Impact Quantification:</strong> Demonstrated that flame-driven spatial separation requirements (especially for wing geometries) dominate system-level penalties over ventilation requirements, with CH<span class="math inline">\(_4\)</span> producing higher penalties due to larger spatial offsets when comparing the same leak rate.</p></li>
+</ul>
+<hr>
+</section>
+<section id="publications" class="level2">
+<h2 class="anchored" data-anchor-id="publications">Publications</h2>
+<ul>
+<li><p>PhD thesis coming soon.</p></li>
+<li><p>Tao, J. and Hansman, R. J., “Fuel Leak Hazard Management for Hydrogen and Methane Aircraft,” Second US-Europe Air Transportation Research and Development Symposium, Delft, Netherlands, 2026. <a href="https://drive.google.com/file/d/1CZUfBWJG58t8snnJGLSVA1ivRdGnYeVa/view"><img src="https://img.shields.io/badge/View-0077B6?style=flat.png" class="img-fluid" alt="View"></a></p></li>
 </ul>
 <hr>
 </section>
@@ -219,7 +228,7 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="results-findings">Results &amp; Findings</h2>
 <section id="leak-behavior-hazard-zones" class="level3">
 <h3 class="anchored" data-anchor-id="leak-behavior-hazard-zones"><strong>Leak Behavior &amp; Hazard Zones</strong></h3>
-<p>Unlike Jet A—which forms slowly evaporating fuel pools with small ignitable regions—leaked H<span class="math inline">\(_2\)</span> and CH<span class="math inline">\(_4\)</span> vaporize quickly, mix readily with ambient air, generate larger ignitable regions, and feature lower ignition energies. Consequently, fuel tank spaces must maintain positive-pressure designs to prevent ignitable boil-off/air mixtures.</p>
+<p>Unlike Jet A—which forms slowly evaporating fuel pools with small ignitable regions—leaked H<span class="math inline">\(_2\)</span> and CH<span class="math inline">\(_4\)</span> vaporize quickly, mix readily with ambient air, generate larger ignitable regions, and have lower ignition energies. Consequently, fuel tank spaces should maintain positive-pressure designs and gaseous-fuel ullage to prevent ignitable boil-off/air mixtures inside tanks.</p>
 <div id="fig-leak-behavior" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-leak-behavior-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -230,6 +239,7 @@ Figure&nbsp;1: Qualitative comparison of leak and fire safety behavior for Jet A
 </figcaption>
 </figure>
 </div>
+<p>Ground-system leak mitigation strategies provide a baseline of mitigation options, but there are not established ways to apply these to aircraft applications and relate them to certification requirements. We propose a leak mitigation concept centered around two key constructs: designated leak zones (DLZs) and passive-threshold leak rates (PTLRs).</p>
 <div id="fig-fwd_aft_DLZ" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fwd_aft_DLZ-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
