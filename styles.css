@@ -18,3 +18,25 @@ figure figcaption,
 .quarto-grid-item .card {
   overflow: hidden;
 }
+
+
+/* Reduce top white space on the page */
+#quarto-document-content, 
+.content, 
+main.content {
+  margin-top: 0 !important;
+  padding-top: 0rem !important;
+}
+
+/* Pull the left column up slightly so your name aligns with "About" */
+#hero-image {
+  margin-top: -0.8rem; /* Adjust this value up or down by tenths of a rem if needed */
+}
+
+/* Make your name prominent */
+#hero-image h1 {
+  font-size: 2.2rem !important;
+  font-weight: 700 !important;
+  line-height: 1.1 !important;
+  margin-bottom: 1rem !important;
+}
