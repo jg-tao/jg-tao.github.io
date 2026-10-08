@@ -150,14 +150,24 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#key-contributions-technical-highlights" id="toc-key-contributions-technical-highlights" class="nav-link" data-scroll-target="#key-contributions-technical-highlights">Key Contributions &amp; Technical Highlights</a></li>
-  <li><a href="#publications" id="toc-publications" class="nav-link" data-scroll-target="#publications">Publications</a></li>
-  <li><a href="#results-findings" id="toc-results-findings" class="nav-link" data-scroll-target="#results-findings">Results &amp; Findings</a>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a>
   <ul class="collapse">
-  <li><a href="#leak-behavior-hazard-zones" id="toc-leak-behavior-hazard-zones" class="nav-link" data-scroll-target="#leak-behavior-hazard-zones"><strong>Leak Behavior &amp; Hazard Zones</strong></a></li>
-  <li><a href="#model-optimized-hbf_2-and-chbf_4-aircraft-at-increasing-ptlrs" id="toc-model-optimized-hbf_2-and-chbf_4-aircraft-at-increasing-ptlrs" class="nav-link" data-scroll-target="#model-optimized-hbf_2-and-chbf_4-aircraft-at-increasing-ptlrs"><strong>Model-Optimized H<span class="math inline">\(\bf{_2}\)</span> and CH<span class="math inline">\(\bf{_4}\)</span> Aircraft at Increasing PTLRs</strong></a></li>
-  <li><a href="#transport-energy-penalties" id="toc-transport-energy-penalties" class="nav-link" data-scroll-target="#transport-energy-penalties"><strong>Transport Energy Penalties</strong></a></li>
+  <li><a href="#at-a-glance" id="toc-at-a-glance" class="nav-link" data-scroll-target="#at-a-glance">At a glance</a></li>
+  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background">Background</a></li>
+  </ul></li>
+  <li><a href="#key-contributions" id="toc-key-contributions" class="nav-link" data-scroll-target="#key-contributions">Key Contributions</a></li>
+  <li><a href="#key-results" id="toc-key-results" class="nav-link" data-scroll-target="#key-results">Key Results</a>
+  <ul class="collapse">
+  <li><a href="#transport-energy-penalties" id="toc-transport-energy-penalties" class="nav-link" data-scroll-target="#transport-energy-penalties">Transport Energy Penalties</a></li>
+  <li><a href="#penalty-versus-spatial-separation" id="toc-penalty-versus-spatial-separation" class="nav-link" data-scroll-target="#penalty-versus-spatial-separation">Penalty versus spatial separation</a></li>
+  </ul></li>
+  <li><a href="#publications" id="toc-publications" class="nav-link" data-scroll-target="#publications">Publications</a></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a>
+  <ul class="collapse">
+  <li><a href="#designated-leak-zones-and-the-proposed-leak-safety-framework" id="toc-designated-leak-zones-and-the-proposed-leak-safety-framework" class="nav-link" data-scroll-target="#designated-leak-zones-and-the-proposed-leak-safety-framework">Designated Leak Zones and the Proposed Leak Safety Framework</a></li>
+  <li><a href="#passive-threshold-leak-rate-ptlr" id="toc-passive-threshold-leak-rate-ptlr" class="nav-link" data-scroll-target="#passive-threshold-leak-rate-ptlr">Passive-Threshold Leak Rate (PTLR)</a></li>
+  <li><a href="#leak-consequence-modeling" id="toc-leak-consequence-modeling" class="nav-link" data-scroll-target="#leak-consequence-modeling">Leak Consequence Modeling</a></li>
+  <li><a href="#mdo-implementation" id="toc-mdo-implementation" class="nav-link" data-scroll-target="#mdo-implementation">MDO Implementation</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -203,73 +213,74 @@ window.Quarto = {
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>Sustainably reducing aviation’s climate impact points toward alternative energy systems, with liquid hydrogen (H<span class="math inline">\(_2\)</span>) and methane (CH<span class="math inline">\(_4\)</span>) emerging as prime candidates for long-haul flight. However, these fuels differ substantially from Jet A in their leak and ignition behavior, requiring systemic safety considerations from the earliest design phases.</p>
-<p>This research bridges three key domains: <strong>certification frameworks</strong>, <strong>hazard physics</strong>, and <strong>aircraft performance</strong>. By coupling jet/flame consequence solvers (like HyRAM+) with multidisciplinary design optimization (MDO), we evaluate how passive leak-mitigation requirements impact transport efficiency across different fuel types and tank architectures.</p>
-</section>
-<section id="key-contributions-technical-highlights" class="level2">
-<h2 class="anchored" data-anchor-id="key-contributions-technical-highlights">Key Contributions &amp; Technical Highlights</h2>
+<p>Liquid hydrogen (H<span class="math inline">\(_2\)</span>) and methane (CH<span class="math inline">\(_4\)</span>) are leading candidates for decarbonizing long-haul aviation. However, these fuels differ substantially from Jet A in their leak and ignition behavior, requiring systemic safety considerations from the earliest design phases.</p>
+<p>This research connects three domains: <strong>certification frameworks</strong>, <strong>hazard physics</strong>, and <strong>aircraft performance</strong>. I couple leak-consequence solvers (such as HyRAM+) with multidisciplinary design optimization (MDO) to quantify how passive leak-mitigation requirements affect transport efficiency across fuels and tank architectures.</p>
+<section id="at-a-glance" class="level3">
+<h3 class="anchored" data-anchor-id="at-a-glance">At a glance</h3>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Headline results
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
-<li><p><strong>Designated Leak Zone (DLZ) Framework:</strong> Proposed formal classification of Designated Leak Zones (DLZs) for H<span class="math inline">\(_2\)</span>- and CH<span class="math inline">\(_4\)</span>-fueled aircraft—mirroring 14 CFR § 25.1181 for Jet A fire zones—to systematically handle unique alternative-fuel vapor and ignition risks.</p></li>
-<li><p><strong>Physics-Based Consequence Modeling:</strong> Utilized leak-consequence physics models to map out required ventilation mass flow rates and spatial separations needed to passively mitigate potential jet fires, explosions, and cryogenic-related damage.</p></li>
-<li><p><strong>Multidisciplinary Design Optimization (MDO) Integration:</strong> Developed an aircraft design procedure that optimizes vehicle configurations subject to leak safety constraints, allowing evaluation of transport energy as a function of fuel, tank layout, and mitigated leak rate (dubbed passive-threshold leak rate–PTLR).</p></li>
-<li><p><strong>Performance Impact Quantification:</strong> Demonstrated that flame-driven spatial separation requirements (especially for wing geometries) dominate system-level penalties over ventilation requirements, with CH<span class="math inline">\(_4\)</span> producing higher penalties due to larger spatial offsets when comparing the same leak rate.</p></li>
+<li><strong>Safety has a measurable cost, and it depends on how much leakage you design to tolerate.</strong> For a 7500 nmi, 400-passenger commercial transport mission (Boeing 777-300ER-class), designing for a 10 mg/s passive-threshold leak rate (PTLR) raises passenger-specific transport energy by roughly <strong>2-5%</strong>. At 20 mg/s, the increase is roughly <strong>3-11%</strong>.</li>
+<li><strong>Spatial separation drives the penalty, not ventilation.</strong> Keeping hot jets due to fuel-leak-supplied flames away from structure grows the aircraft, and is especially impactful if driving the wing geometry. Ventilation drag to mitigate leaked fuel buildup and subsequent explosion risk is a minor contributor.</li>
+<li><strong>Methane is penalized more than hydrogen at the same leak rate</strong> because its flames require larger offsets.</li>
 </ul>
-<hr>
+</div>
+</div>
+<div id="fig-aircraft_out" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-aircraft_out-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="20_mg_s_opti_aircraft.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-aircraft_out-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Model-optimized aircraft with a 20 mg/s PTLR.
+</figcaption>
+</figure>
+</div>
+<p>Full results are in <a href="#key-results">Key Results</a>; the framework and models behind them are in <a href="#methods">Methods</a>.</p>
 </section>
-<section id="publications" class="level2">
-<h2 class="anchored" data-anchor-id="publications">Publications</h2>
-<ul>
-<li><p>PhD thesis coming soon.</p></li>
-<li><p>Tao, J. and Hansman, R. J., “Fuel Leak Hazard Management for Hydrogen and Methane Aircraft,” Second US-Europe Air Transportation Research and Development Symposium, Delft, Netherlands, 2026. <a href="https://drive.google.com/file/d/1CZUfBWJG58t8snnJGLSVA1ivRdGnYeVa/view"><img src="https://img.shields.io/badge/View-0077B6?style=flat.png" class="img-fluid" alt="View"></a></p></li>
-</ul>
-<hr>
-</section>
-<section id="results-findings" class="level2">
-<h2 class="anchored" data-anchor-id="results-findings">Results &amp; Findings</h2>
-<section id="leak-behavior-hazard-zones" class="level3">
-<h3 class="anchored" data-anchor-id="leak-behavior-hazard-zones"><strong>Leak Behavior &amp; Hazard Zones</strong></h3>
-<p>Unlike Jet A—which forms slowly evaporating fuel pools with small ignitable regions—leaked H<span class="math inline">\(_2\)</span> and CH<span class="math inline">\(_4\)</span> vaporize quickly, mix readily with ambient air, generate larger ignitable regions, and have lower ignition energies. Consequently, fuel tank spaces should maintain positive-pressure designs and gaseous-fuel ullage to prevent ignitable boil-off/air mixtures inside tanks.</p>
+<section id="background" class="level3">
+<h3 class="anchored" data-anchor-id="background">Background</h3>
+<p>Jet A forms slowly evaporating pools with small ignitable regions. Leaked H<span class="math inline">\(_2\)</span> and CH<span class="math inline">\(_4\)</span> behave very differently: they vaporize quickly, mix readily with air, form larger ignitable regions, and ignite at much lower energies. As a result, tanks should stay at positive pressure with a gaseous-fuel ullage, which prevents ignitable boil-off/air mixtures from forming inside them.</p>
 <div id="fig-leak-behavior" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-leak-behavior-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="fire_safety.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-leak-behavior-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Qualitative comparison of leak and fire safety behavior for Jet A versus H<span class="math inline">\(_2\)</span> and CH<span class="math inline">\(_4\)</span>.
+Figure&nbsp;2: Qualitative comparison of leak and fire safety behavior for Jet A versus H<span class="math inline">\(_2\)</span> and CH<span class="math inline">\(_4\)</span>.
 </figcaption>
 </figure>
 </div>
-<p>Ground-system leak mitigation strategies provide a baseline of mitigation options, but there are not established ways to apply these to aircraft applications and relate them to certification requirements. We propose a leak mitigation concept centered around two key constructs: designated leak zones (DLZs) and passive-threshold leak rates (PTLRs).</p>
-<div id="fig-fwd_aft_DLZ" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-fwd_aft_DLZ-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="hazard_zones.png" class="img-fluid figure-img" style="width:70.0%">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fwd_aft_DLZ-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: Hazard zones for forward-aft fuel tank configuration.
-</figcaption>
-</figure>
-</div>
-<div id="fig-ventral_DLZ" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-ventral_DLZ-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="ventral_DLZ.png" class="img-fluid figure-img" style="width:70.0%">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ventral_DLZ-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3: Hazard zones for ventral fuel tank configuration.
-</figcaption>
-</figure>
-</div>
+<p>Ground-based hydrogen systems offer a baseline set of leak-mitigation strategies. However, there is no established way to apply them to aircraft or to relate them to certification requirements. This work aims to fill that gap.</p>
 </section>
-<section id="model-optimized-hbf_2-and-chbf_4-aircraft-at-increasing-ptlrs" class="level3">
-<h3 class="anchored" data-anchor-id="model-optimized-hbf_2-and-chbf_4-aircraft-at-increasing-ptlrs"><strong>Model-Optimized H<span class="math inline">\(\bf{_2}\)</span> and CH<span class="math inline">\(\bf{_4}\)</span> Aircraft at Increasing PTLRs</strong></h3>
+</section>
+<section id="key-contributions" class="level2">
+<h2 class="anchored" data-anchor-id="key-contributions">Key Contributions</h2>
+<ul>
+<li><p><strong>Designated Leak Zone (DLZ) framework.</strong> A formal classification of leak zones for H<span class="math inline">\(_2\)</span>- and CH<span class="math inline">\(_4\)</span>-fueled aircraft, modeled on the 14 CFR § 25.1181 fire zones used for Jet A, to handle the unique vapor and ignition risks of alternative fuels.</p></li>
+<li><p><strong>Physics-based consequence modeling.</strong> Leak-consequence models that map the ventilation flow rates and spatial separations needed to passively mitigate jet fires, explosions, and cryogenic damage.</p></li>
+<li><p><strong>MDO integration.</strong> An aircraft design procedure that optimizes vehicle configuration under leak-safety constraints. It evaluates transport energy as a function of fuel, tank layout, and the maximum leak rate mitigated passively, termed the passive-threshold leak rate (PTLR).</p></li>
+<li><p><strong>Performance impact quantification.</strong> Flame-driven spatial separation (especially for wing geometries) dominates system-level penalties over ventilation requirements. At equal leak rates, CH<span class="math inline">\(_4\)</span> incurs larger penalties because of its larger spatial offsets.</p></li>
+</ul>
+</section>
+<section id="key-results" class="level2">
+<h2 class="anchored" data-anchor-id="key-results">Key Results</h2>
+<p>Model-optimized H<span class="math inline">\(_2\)</span> and CH<span class="math inline">\(_4\)</span> aircraft are shown below for two tank layouts at increasing PTLRs.</p>
 <div id="fig-fwd_aft_stacked" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fwd_aft_stacked-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="fwd_aft_stacked.png" class="img-fluid figure-img" style="width:70.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fwd_aft_stacked-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4: Forward-aft tank configuration.
+Figure&nbsp;3: Forward-aft tank configuration: model-optimized H<span class="math inline">\(_2\)</span> and CH<span class="math inline">\(_4\)</span> aircraft at increasing PTLRs.
 </figcaption>
 </figure>
 </div>
@@ -279,25 +290,25 @@ Figure&nbsp;4: Forward-aft tank configuration.
 <img src="ventral_stacked.jpg" class="img-fluid figure-img" style="width:70.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ventral_stacked-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;5: Ventral tank configuration.
+Figure&nbsp;4: Ventral tank configuration: model-optimized H<span class="math inline">\(_2\)</span> and CH<span class="math inline">\(_4\)</span> aircraft at increasing PTLRs.
 </figcaption>
 </figure>
 </div>
-</section>
 <section id="transport-energy-penalties" class="level3">
-<h3 class="anchored" data-anchor-id="transport-energy-penalties"><strong>Transport Energy Penalties</strong></h3>
-<p>Evaluating a 7500 nmi long-haul mission (400 pax, 2-class seating, 20 t cargo, 64.8 m wingspan gate constraint), model-optimized aircraft show passenger specific transport energy penalties (MJ pax<span class="math inline">\(^{-1}\)</span> km<span class="math inline">\(^{-1}\)</span>) as the maximum passive-mitigation leak rate (PTLR) increases.</p>
+<h3 class="anchored" data-anchor-id="transport-energy-penalties">Transport Energy Penalties</h3>
+<p>The design mission is a 7500 nmi flight with 400 passengers (two-class seating), 20 t of cargo, and a 64.8 m wingspan gate constraint. The figure and table show how passenger-specific transport energy (MJ pax<span class="math inline">\(^{-1}\)</span> km<span class="math inline">\(^{-1}\)</span>) increases as the PTLR increases.</p>
 <div id="fig-transport-energy" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-transport-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="transport_energy_zoomed.png" class="img-fluid figure-img" style="width:70.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-transport-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6: Passenger-specific transport energy versus PTLR across forward-aft and ventral tank configurations.
+Figure&nbsp;5: Passenger-specific transport energy versus PTLR for forward-aft and ventral tank configurations.
 </figcaption>
 </figure>
 </div>
 <table class="caption-top table">
+<caption>Increase in passenger-specific transport energy relative to the same aircraft without leak-safety constraints.</caption>
 <colgroup>
 <col style="width: 20%">
 <col style="width: 20%">
@@ -331,7 +342,488 @@ Figure&nbsp;6: Passenger-specific transport energy versus PTLR across forward-af
 </tr>
 </tbody>
 </table>
-<hr>
+</section>
+<section id="penalty-versus-spatial-separation" class="level3">
+<h3 class="anchored" data-anchor-id="penalty-versus-spatial-separation">Penalty versus spatial separation</h3>
+<p>Comparing fuels at the same PTLR is not necessarily fair, because preventing a leak of a given rate is not equally difficult for every fuel. Most of the penalty comes from spatial separation requirements and the resulting growth in aircraft size, not from ventilation drag. The plot below therefore shows the same results against the required separation distance (<span class="math inline">\(d_{sep}\)</span>) directly.</p>
+<div id="fig-transport-energy_dsep" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-transport-energy_dsep-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="transport_energy_vs_dsep.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-transport-energy_dsep-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: Passenger-specific transport energy versus spatial separation requirement for forward-aft and ventral tank configurations.
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="publications" class="level2">
+<h2 class="anchored" data-anchor-id="publications">Publications</h2>
+<ul>
+<li><p>Link to PhD thesis coming soon.</p></li>
+<li><p>Tao, J. and Hansman, R. J., “Fuel Leak Hazard Management for Hydrogen and Methane Aircraft,” Second US-Europe Air Transportation Research and Development Symposium, Delft, Netherlands, 2026. <a href="https://drive.google.com/file/d/1CZUfBWJG58t8snnJGLSVA1ivRdGnYeVa/view"><img src="https://img.shields.io/badge/View-0077B6?style=flat.png" class="img-fluid" alt="View"></a></p></li>
+</ul>
+</section>
+<section id="methods" class="level2">
+<h2 class="anchored" data-anchor-id="methods">Methods</h2>
+<p>The sections below describe the leak-safety framework, the consequence models, and the MDO setup behind the results above.</p>
+<section id="designated-leak-zones-and-the-proposed-leak-safety-framework" class="level3">
+<h3 class="anchored" data-anchor-id="designated-leak-zones-and-the-proposed-leak-safety-framework">Designated Leak Zones and the Proposed Leak Safety Framework</h3>
+<p>The framework rests on two constructs: <strong>designated leak zones (DLZs)</strong> and <strong>passive-threshold leak rates (PTLRs)</strong>.</p>
+<p>The hazard zone definitions are informed by FAR 25.863 (flammable fluid fire protection) and FAR 25.1181 (designated fire zones). Zones are defined by their proximity to fuel and to heat or ignition sources:</p>
+<ul>
+<li><p><strong>Fuel zone:</strong> the internal volume of fuel-containing components, such as tanks and pipes, where liquid, supercritical, or gaseous fuel is present during normal operation.</p></li>
+<li><p><strong>Designated leak zone (DLZ):</strong> any region where leaked fuel could enter or accumulate. This includes compartments containing fuel-system components and regions that fuel lines or fittings pass through, but excludes regions continuously open to the external atmosphere.</p></li>
+<li><p><strong>Designated fire zone:</strong> a region associated with equipment identified under FAR 25.1181, such as engine and auxiliary power unit compartments, where flammable fluids and high-temperature ignition sources may coexist. These zones must meet the applicable designated fire zone requirements.</p></li>
+<li><p><strong>Occupied areas:</strong> areas where occupants and cargo are present during normal operations. They may contain ignition sources associated with people, equipment, or cargo. Fuel shall not be present in occupied areas during normal operations or single-failure scenarios.</p></li>
+</ul>
+<div id="fig-fwd_aft_DLZ" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-fwd_aft_DLZ-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="hazard_zones.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fwd_aft_DLZ-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7: Hazard zone classification for hydrogen and methane aircraft, shown for an illustrative forward-aft fuel tank configuration. Fuel zones and occupied areas are pressurized relative to the designated leak zone, which is maintained at lower pressure than the adjacent protected zones or is unpressurized.
+</figcaption>
+</figure>
+</div>
+<div id="fig-ventral_DLZ" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ventral_DLZ-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="ventral_DLZ.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ventral_DLZ-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8: Hazard zones for the ventral fuel tank configuration.
+</figcaption>
+</figure>
+</div>
+<p>Two requirements follow from these definitions:</p>
+<ul>
+<li><p><strong>Adjacency.</strong> A single failure may not introduce flammable fluids into occupied areas. Occupied areas therefore cannot be adjacent to designated fire zones or fuel zones; a DLZ must sit between them as a leak-mitigation buffer.</p></li>
+<li><p><strong>Pressurization.</strong> This localizes single-failure leak consequences to the DLZ. Fuel zones are kept at positive pressure relative to the DLZ, so a loss of containment pushes fuel outward into the DLZ. Occupied areas are also kept at positive pressure relative to the DLZ, which biases leaked fuel away from the cabin. Managing leaks within the DLZ is then the primary means of preventing personnel exposure.</p></li>
+</ul>
+<div id="fig-leak_cons" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-leak_cons-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="leak_consequence_management.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-leak_cons-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9: Leak consequences are localized and managed within DLZs.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="passive-threshold-leak-rate-ptlr" class="level3">
+<h3 class="anchored" data-anchor-id="passive-threshold-leak-rate-ptlr">Passive-Threshold Leak Rate (PTLR)</h3>
+<p>Leak consequences, and the design needed to mitigate them, depend on leak rate. Passive mitigation is always available, but its design requirements scale with the leak rate it must accommodate, so a characteristic leak rate must be chosen. That rate, expressed as a fuel mass flow rate, is the <strong>passive-threshold leak rate (PTLR)</strong>.</p>
+<p>An aircraft’s PTLR is the maximum leak rate for which it is passively safe, meaning safe without leak detection or response.</p>
+<div id="fig-PTLR" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-PTLR-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="PTLR_concept.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-PTLR-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10: The passive-threshold leak rate (PTLR) is the maximum leak rate for which a DLZ is passively safe.
+</figcaption>
+</figure>
+</div>
+<p>Choosing the PTLR is a balance against the acceptable-risk criteria of FAR 25.1309:</p>
+<div id="fig-251309" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-251309-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="25_1309_matrix.png" class="img-fluid figure-img" style="width:40.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-251309-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;11: FAR 25.1309 acceptable risk for all systems.
+</figcaption>
+</figure>
+</div>
+<div id="fig-PTLR_under" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-PTLR_under-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="PTLR_underspec.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-PTLR_under-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12: If the PTLR is underspecified, the requirements of FAR 25.1309 are not met.
+</figcaption>
+</figure>
+</div>
+<div id="fig-PTLR_over" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-PTLR_over-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="PTLR_overspec.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-PTLR_over-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;13: If the PTLR is overspecified, the requirements of FAR 25.1309 are met, but unnecessary performance penalties are incurred.
+</figcaption>
+</figure>
+</div>
+<div id="fig-PTLR_opt" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-PTLR_opt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="PTLR_performance_optimal.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-PTLR_opt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;14: The performance-optimal PTLR: aircraft-level performance penalties are minimized while still meeting the requirements of FAR 25.1309.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="leak-consequence-modeling" class="level3">
+<h3 class="anchored" data-anchor-id="leak-consequence-modeling">Leak Consequence Modeling</h3>
+<p>Each DLZ is represented by a simplified duct-like segment, and parametric models estimate the consequences of a leak within it.</p>
+<div id="fig-leak_zone_model" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-leak_zone_model-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="leak_zone_simple_hazard_model.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-leak_zone_model-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;15: Simplified leak zone segment used for parametric hazard analysis. Fuel is released from a local leak source into a duct-like segment that may be ventilated along its length.
+</figcaption>
+</figure>
+</div>
+<p><strong>Leak source.</strong> Models disagree substantially for cryogenic leaks near saturation, with mass-flux differences up to about 8<span class="math inline">\(\times\)</span>.</p>
+<div id="fig-critical_flow" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-critical_flow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="critical_flow_model_comparison.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-critical_flow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;16: Comparison of orifice-flow model predictions for cryogenic hydrogen and methane leaks from a 145 kPa upstream state to 30 kPa ambient pressure. Results are shown versus upstream temperature, with the hydrogen and methane temperature axes aligned relative to each fuel’s boiling point at 145 kPa. For saturated-liquid and two-phase upstream conditions, the predicted leak-exit density, speed, and mass flux vary substantially across models, with mass-flux differences up to approximately 8<span class="math inline">\(\times\)</span>. For gaseous upstream conditions sufficiently above the boiling point, the HyRAM and classical gas choked-flow predictions agree closely.
+</figcaption>
+</figure>
+</div>
+<p><strong>Explosion mitigation.</strong> Ventilation limits the accumulated fuel mass, and thereby the overpressure from combustion.</p>
+<div id="fig-local_overpressure" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-local_overpressure-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="local_overpressure.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-local_overpressure-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;17: Estimated overpressure in a 30 m<span class="math inline">\(^3\)</span> reference leak zone as a function of leak rate and ventilation speed. Contours show the ratio of pressure increase to ambient pressure from combustion of accumulated fuel. Increasing ventilation reduces the accumulated fuel mass and lowers the overpressure. Model by Bauwens and Dorofeev.
+</figcaption>
+</figure>
+</div>
+<div id="fig-overpressure" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-overpressure-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="overpressure_summary.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-overpressure-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;18: Ventilation speed required to meet explosion-mitigation criteria as a function of leak rate for the 1 m<span class="math inline">\(^2\)</span>, 30 m long reference leak zone. Criteria include keeping the bulk fuel-air concentration below 25% of the lower flammability limit (LFL) and limiting overpressure to selected target values.
+</figcaption>
+</figure>
+</div>
+<p><strong>Jet fire and heating.</strong> Spatial separation and ventilation determine how hot nearby structure gets.</p>
+<div id="fig-heat_eq" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-heat_eq-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="component_specific_heating_analysis.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-heat_eq-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;19: Model used for component-specific heating analysis, where heat equation is solved using py-pde and accounting for convective heat transfer from flame to component, convective cooling of ventilation air, and radiation to and from the component.
+</figcaption>
+</figure>
+</div>
+<div id="fig-heat_eq_results" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-heat_eq_results-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="case1_AL7075_8km_sweep_robin_bc_varying_jet_temp_contours.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-heat_eq_results-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;20: Steady-state maximum temperature of a 0.125-inch Al-7075-T6 plate as a function of spatial separation (horizontal axis) and ventilation speed (vertical axis) for hydrogen (left) and methane (right) at leak rates of 100 mg/s (top) and 1000 mg/s (bottom). Background conditions are assumed for an altitude of 8000 m.
+</figcaption>
+</figure>
+</div>
+<div id="fig-hot_metrics" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-hot_metrics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="hot_metrics.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hot_metrics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;21: Metrics evaluated for spatial separation requirements that protect nearby structures from jet-flame thermal hazard.
+</figcaption>
+</figure>
+</div>
+<div id="fig-hot" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-hot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="hot.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;22: Visible flame length, unobstructed 100 °C distance, and component-specific 100 °C distance as a function of leak mass flow rate for cryogenic liquid hydrogen and methane. Unobstructed 100 °C distances provide a conservative upper bound for PTLRs greater than $$10-30 mg/s.
+</figcaption>
+</figure>
+</div>
+<p><strong>Summary.</strong> Together, these parametric models feed the aircraft-level optimization.</p>
+<div id="fig-parametric_summary" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-parametric_summary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="parametric_summary.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-parametric_summary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;23: Summary of parametric consequence models and outputs.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="mdo-implementation" class="level3">
+<h3 class="anchored" data-anchor-id="mdo-implementation">MDO Implementation</h3>
+<p>The consequence models enter the aircraft design optimization as constraints, for both tank layouts.</p>
+<div id="fig-fwd_aft_opti" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-fwd_aft_opti-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="fwd_aft_diagram_and_opti.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fwd_aft_opti-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;24: Forward-aft fuel tank configuration and MDO implementation.
+</figcaption>
+</figure>
+</div>
+<div id="fig-ventral_opti" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ventral_opti-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="ventral_diagram_and_opti.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ventral_opti-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;25: Ventral fuel tank configuration and MDO implementation.
+</figcaption>
+</figure>
+</div>
+<!-- ---
+title: "PhD Research: Hydrogen and Methane Aircraft Safety"
+description: "Quantifying how hydrogen- and methane-specific leak-safety constraints affect long-haul aircraft performance and informing future certification frameworks."
+date: "2026-09-17"
+categories: [Aircraft Design, Hydrogen Safety, Multidisciplinary Design Optimization, Systems Engineering]
+image: "hazard_zones.png"
+---
+
+## Overview
+Sustainably reducing aviation's climate impact points toward alternative energy systems, with liquid hydrogen (H$_2$) and methane (CH$_4$) emerging as prime candidates for long-haul flight. However, these fuels differ substantially from Jet A in their leak and ignition behavior, requiring systemic safety considerations from the earliest design phases. 
+
+This research bridges three key domains: **certification frameworks**, **hazard physics**, and **aircraft performance**. By coupling jet/flame consequence solvers (like HyRAM+) with multidisciplinary design optimization (MDO), we evaluate how passive leak-mitigation requirements impact transport efficiency across different fuel types and tank architectures.
+
+### Background
+Unlike Jet A—which forms slowly evaporating fuel pools with small ignitable regions—leaked H$_2$ and CH$_4$ vaporize quickly, mix readily with ambient air, generate larger ignitable regions, and have lower ignition energies. Consequently, fuel tank spaces should maintain positive-pressure designs and gaseous-fuel ullage to prevent ignitable boil-off/air mixtures inside tanks. 
+
+::: {#fig-leak-behavior}
+![](fire_safety.png){width="100%"}
+
+Qualitative comparison of leak and fire safety behavior for Jet A versus H$_2$ and CH$_4$.
+:::
+
+Ground-system leak mitigation strategies provide a baseline of mitigation options, but there are not established ways to apply these to aircraft applications and relate them to certification requirements.
+
+
+## Key Contributions & Technical Highlights
+* **Designated Leak Zone (DLZ) Framework:** Proposed formal classification of Designated Leak Zones (DLZs) for H$_2$- and CH$_4$-fueled aircraft—mirroring 14 CFR § 25.1181 for Jet A fire zones—to systematically handle unique alternative-fuel vapor and ignition risks.
+
+* **Physics-Based Consequence Modeling:** Utilized leak-consequence physics models to map out required ventilation mass flow rates and spatial separations needed to passively mitigate potential jet fires, explosions, and cryogenic-related damage.
+
+* **Multidisciplinary Design Optimization (MDO) Integration:** Developed an aircraft design procedure that optimizes vehicle configurations subject to leak safety constraints, allowing evaluation of transport energy as a function of fuel, tank layout, and mitigated leak rate (dubbed passive-threshold leak rate--PTLR).
+
+* **Performance Impact Quantification:** Demonstrated that flame-driven spatial separation requirements (especially for wing geometries) dominate system-level penalties over ventilation requirements, with CH$_4$ producing higher penalties due to larger spatial offsets when comparing the same leak rate.
+
+
+## Key Results: Model-Optimized H$\bf{_2}$ and CH$\bf{_4}$ Aircraft at Increasing PTLRs
+
+::: {#fig-fwd_aft_stacked}
+![](fwd_aft_stacked.png){width="70%"}
+
+Forward-aft tank configuration.
+:::
+
+::: {#fig-ventral_stacked}
+![](ventral_stacked.jpg){width="70%"}
+
+Ventral tank configuration.
+:::
+
+### **Transport Energy Penalties**
+Evaluating a 7500 nmi long-haul mission (400 pax, 2-class seating, 20 t cargo, 64.8 m wingspan gate constraint), model-optimized aircraft show passenger specific transport energy penalties (MJ pax$^{-1}$ km$^{-1}$) as the maximum passive-mitigation leak rate (PTLR) increases.
+
+::: {#fig-transport-energy}
+![](transport_energy_zoomed.png){width="70%"}
+
+Passenger-specific transport energy versus PTLR across forward-aft and ventral tank configurations.
+:::
+
+| PTLR [mg/s] | Fwd-Aft H$_2$ | Fwd-Aft CH$_4$ | Ventral H$_2$ | Ventral CH$_4$ |
+| :--- | :--- | :--- | :--- | :--- |
+| **10** | 1.8% | 4.7% | 2.0% | 3.0% |
+| **20** | 3.1% | 11.2% | 8.0% | 9.3% |
+
+::: {#fig-aircraft_out}
+![](20_mg_s_opti_aircraft.png){width="70%"}
+
+Model-optimized aircraft with 20 mg/s PTLR. 
+:::
+
+Comparing equivalent PTLRs is not necessarily fair, i.e., it is not equally difficult to prevent leaks of a specified rate across fuels. Additionally, most of the performance impact is due to spatial separation requirements and associated increase in aircraft size, rather than drag due to ventilation air. Thus, below is another plot of the results where impacts are evaluated versus the spatial separation requirement ($d_{sep}$) directly. 
+
+::: {#fig-transport-energy_dsep}
+![](transport_energy_vs_dsep.png){width="70%"}
+
+Passenger-specific transport energy versus spatial separation requirement across forward-aft and ventral tank configurations.
+:::
+
+
+## Publications
+* Link to PhD thesis coming soon.
+
+* Tao, J. and Hansman, R. J., “Fuel Leak Hazard Management for Hydrogen and Methane Aircraft,” Second US-Europe Air Transportation Research and Development Symposium, Delft, Netherlands, 2026. [![View](https://img.shields.io/badge/View-0077B6?style=flat)](https://drive.google.com/file/d/1CZUfBWJG58t8snnJGLSVA1ivRdGnYeVa/view)
+
+
+## Methods 
+### Designated Leak Zones (DLZs) and Propose Leak Safety Framework
+
+We propose a leak mitigation concept centered around two key constructs: designated leak zones (DLZs) and passive-threshold leak rates (PTLRs). 
+
+The hazard zone definitions below are informed by FAR 25.863: Flammable fluid fire protection and FAR 25.1181: Designated fire zones; regions included. The hazard zones are defined based on proximity to fuel and to heat or ignition sources:
+
+* **Fuel zone:** the internal volume of fuel-containing components, such as tanks and pipes, in which liquid, supercritical, or gaseous fuel is present under normal operation. 
+
+* **Designated leak zone (DLZ):** any region of the aircraft in which leaked fuel could enter or accumulate, including compartments containing fuel-system components and regions through which fuel lines or fittings pass, with the exception of regions that are continuously open to the external atmosphere. 
+    
+* **Designated fire zone:** a region associated with equipment identified under FAR~25.1181, such as engine compartments and auxiliary power unit compartments, where flammable fluids and high-temperature ignition sources may coexist. These zones must meet the applicable designated fire zone requirements.
+
+* **Occupied areas:** areas where occupants and cargo are present under normal operations. Occupied areas may contain ignition sources associated with people, equipment, or cargo. Fuel shall not be present in occupied areas under normal operations or under single-failure scenarios. 
+
+::: {#fig-fwd_aft_DLZ}
+![](hazard_zones.png){width="70%"}
+
+Hazard zone classification for hydrogen and methane aircraft, shown for an illustrative fwd-aft fuel tank configuration. Fuel zones and occupied areas are pressurized relative to the designated leak zone; the designated leak zone is maintained at lower pressure than adjacent protected zones or is unpressurized.
+:::
+
+::: {#fig-ventral_DLZ}
+![](ventral_DLZ.png){width="70%"}
+
+Hazard zones for ventral fuel tank configuration.
+:::
+
+
+* **Adjacency requirements:** Due to the requirements and definitions above, i.e., that a single-failure scenario may not introduce flammable fluids into occupied areas, occupied areas may not be adjacent to designated fire zones nor fuel zones; instead, a designated leak zone must provide a leak-mitigation buffer. 
+
+* **Pressurization requirements:** A key property of this framework is that it localizes single-failure leak consequences to the DLZ. Fuel zones are maintained at positive pressure relative to the DLZ, so loss of containment produces outward flow from the fuel system into the DLZ. Occupied areas are also maintained at positive pressure relative to the DLZ, so leaked fuel is biased away from the cabin rather than into it. Under this configuration, effective management of leaks within the DLZ is the primary means of preventing personnel exposure consequences.
+
+::: {#fig-leak_cons}
+![](leak_consequence_management.png){width="70%"}
+
+Leak consequences are localized and managed within DLZs. 
+:::
+
+
+### Mitigating leaks in the leak zone and passive-threshold leak rate (PTLR)
+
+Leak consequence severity and the design requirements for mitigating leak consequences depend on leak rate. Because passive mitigation is continuously available and its design requirements depend on the leak rate to be accommodated, applying passive mitigation requires selection of a characteristic leak rate. This rate, expressed as a fuel mass flow rate, is defined here as the *passive-threshold leak rate* (PTLR).
+
+An aircraft design with passive leak mitigation is therefore characterized by its PTLR, defined as the maximum leak rate for which the aircraft is passively---without leak detection or response---safe.
+
+::: {#fig-PTLR}
+![](PTLR_concept.png){width="70%"}
+
+The *passive-threshold leak rate* (PTLR) is the maximum leak rate for which a DLZ is passively safe.  
+:::
+
+::: {#fig-251309}
+![](25_1309_matrix.png){width="40%"}
+
+FAR 25.1309 acceptable risk for all systems.   
+:::
+
+::: {#fig-PTLR_under}
+![](PTLR_underspec.png){width="70%"}
+
+If PTLR is underspecified, the requirements of FAR 25.1309 are not met.  
+:::
+
+::: {#fig-PTLR_over}
+![](PTLR_overspec.png){width="70%"}
+
+If PTLR is overspecified, the requirements of FAR 25.1309 are met, but unnecessary performance penalties are incurred.  
+:::
+
+::: {#fig-PTLR_opt}
+![](PTLR_performance_optimal.png){width="70%"}
+
+The performance-optimal PTLR: aircraft-level performance penalties are minimized while meeting the requirements of FAR 25.1309.
+:::
+
+
+### Leak Consequence Modeling
+
+::: {#fig-leak_zone_model}
+![](leak_zone_simple_hazard_model.png){width="70%"}
+
+Simplified leak zone segment used for parametric hazard analysis. Fuel is released from a local leak source into a duct-like segment that may be ventilated along its length.
+:::
+
+::: {#fig-critical_flow}
+![](critical_flow_model_comparison.png){width="70%"}
+
+Comparison of orifice-flow model predictions for cryogenic hydrogen and methane leaks from a 145 kPa upstream state to 30 kPa ambient pressure. Results are shown as functions of upstream temperature, with the hydrogen and methane temperature axes aligned relative to each fuel's boiling point at 145 kPa. For saturated-liquid and two-phase upstream conditions, the predicted leak-exit density, speed, and mass flux vary substantially across models, with mass-flux differences up to approximately 8$\times$. For gaseous upstream conditions sufficiently above the boiling point, the HyRAM and classical gas choked-flow predictions agree closely.
+:::
+
+::: {#fig-local_overpressure}
+![](local_overpressure.png){width="70%"}
+
+Estimated overpressure in a 30 m$^3$ reference leak zone as a function of leak rate and ventilation speed. Contours show the ratio of pressure increase to ambient pressure due to combustion of accumulated fuel. Increasing ventilation reduces the accumulated fuel mass and thus lowers the overpressure. Model by Bauwens and Dorofeev.
+:::
+
+::: {#fig-overpressure}
+![](overpressure_summary.png){width="70%"}
+
+Ventilation speed required to meet explosion-mitigation criteria as a function of leak rate for the 1 m$^2$, 30 m long reference leak zone. Criteria include maintaining the bulk fuel-air concentration below 25% of the LFL and limiting the overpressure to selected target values.
+:::
+
+
+::: {#fig-heat_eq}
+![](component_specific_heating_analysis.png){width="70%"}
+
+
+:::
+
+
+::: {#fig-heat_eq_results}
+![](case1_AL7075_8km_sweep_robin_bc_varying_jet_temp_contours.png){width="70%"}
+
+Steady-state maximum temperature of a 0.125-inch Al-7075-T6 plate as a function of spatial separation (horizontal axis) and ventilation speed (vertical axis) for hydrogen (left) and methane (right) at leak rates of 100~mg/s (top) and 1000~mg/s (bottom). Background conditions are assumed based on a 8000~m altitude.
+:::
+
+::: {#fig-hot_metrics}
+![](hot_metrics.png){width="70%"}
+
+
+:::
+
+::: {#fig-hot}
+![](hot.png){width="70%"}
+
+Visible flame length, unobstructed 100\degree C distance, and component-specific 100\degree C distance as a function of leak mass flow rate for cryogenic liquid hydrogen and methane. Unobstructed 100\degree C distances provide a conservative upper bound for PTLRs greater than $\sim$10--30 mg/s.
+:::
+
+::: {#fig-parametric_summary}
+![](parametric_summary.png){width="70%"}
+
+Summary of parametric consequence models and outputs. 
+:::
+
+
+### MDO Implementation
+
+::: {#fig-fwd_aft_opti}
+![](fwd_aft_diagram_and_opti.png){width="70%"}
+
+Fwd-aft fuel tank configuration and MDO implementation.
+:::
+
+::: {#fig-ventral_opti}
+![](ventral_diagram_and_opti.png){width="70%"}
+
+Ventral fuel tank configuration and MDO implementation.
+:::
+ -->
 
 
 </section>
